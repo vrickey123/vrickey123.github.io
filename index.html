@@ -57,6 +57,7 @@
                     </nav>
                 </div>
             </header>
+        
         </div><!-- end of header-->
 
             <div class="row" id="main-content">
@@ -74,8 +75,10 @@
                                     <input type="checkbox">Remember Me
                                 </label>
 
+                                <div class="pull-right">
                                 <input type="submit" class="btn btn-primary" value="login">
-                                <a class="btn btn-info">register</a>
+                                <a class="btn btn-info" href="#register" role="button" data-toggle="modal">register</a>
+                                </div>
                             
                             </fieldset>
 
@@ -89,11 +92,69 @@
                 <div class="span8"></div>
 
             </div>
-        </div>
+        
                 
 
 
             <footer class="row"></footer>
+        </div><!-- end of container -->
+
+        <div id="register" class="modal hide fade" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></button>
+                    <h3 id="modalLabel">Register</h3>
+
+            </div>
+
+            <div class="modal-body">
+
+                <form>
+                    
+                    <p class="label label-info">required</p>
+
+                    <div class="controls controls-row">
+                        <input type="text" class="span3" placeholder="first name">
+                        <input type="text" class="span2" placeholder="last name">
+
+                        <select class="span1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+
+                    <div class="controls control-group info">
+                        <input type="text" class="span5" placeholder="user name" id="inputinfo">
+                        <input type="text" class="span5" placeholder="email" id="inputinfo">
+                        <input type="text" class="span5" placeholder="confirm email" id="inputinfo">    
+                    </div>
+
+                    <p class="help-block">I love to learn about:
+                            <a href="#" id="tip" rel="tooltip" data-animation="true" data-original-title="Cool tip" data-placement="right">Tip</a>
+                    </p>
+
+                    <label class="checkbox inline">
+                            <input type="checkbox">HTML/CSS
+                    </label>
+                    <label class="checkbox inline">
+                            <input type="checkbox">Javascript
+                    </label>
+                    <label class="checkbox inline">
+                            <input type="checkbox">PHP
+                    </label>
+
+                </form>
+
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">cancel</button>
+                <button class="btn btn-success" >register</button>
+
+            </div>
+
+        </div>
+
         
 
         
@@ -101,6 +162,9 @@
 
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $("#tip").tooltip():
+        </script>
     </body>
     
 </html>
