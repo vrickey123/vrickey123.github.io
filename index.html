@@ -11,6 +11,45 @@
     body { padding-top: 0px; }
     }
     </style>
+    <style type="text/css">
+
+      /* Sticky footer styles
+-------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 200px;
+      }
+      #footer {
+        background-color: #303030;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+      </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 
@@ -37,7 +76,7 @@
                             <li class="divider-vertical"></li>
                             <li><a href="resume.html">Resume</a></li>
                             <li class="divider-vertical"></li>
-                            <li><a href="#">Band</a></li><!-- make with active scroll like on bootstrap's components page -->
+                            <li><a href="band.html">Band</a></li><!-- make with active scroll like on bootstrap's components page -->
                             <li class="divider-vertical"></li>
                             
                             <li class="dropdown">
@@ -69,17 +108,20 @@
     
     <!-- main content -->
     <div class="container-responsive">
-        <ul class="thumbnails">
-            <li class="span4">
-                <a href="#" class="thumbnail">
-                    <img data-src="holder.js/300x200" alt="">
-                </a>
-            </li>
+
+      
+    </div>
 
             
 
 
     </div><!-- end of container -->
+
+    <div id="footer">
+        <div class="container-responsive">
+            <p class="text-warning">Vince Rickey</p>
+        </div>
+    </div>
     
 
             
