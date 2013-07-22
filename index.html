@@ -1,183 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Vince Rickey</title>
+  <head>
+    <meta charset="utf-8">
+    <title>Flat UI Kit - HTML/PSD Design Framework</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <style media="screen" type="text/css">
-    body { padding-top: 40px; }
-    @media screen and (max-width: 768px) {
-    body { padding-top: 0px; }
-    }
-    </style>
-    <style type="text/css">
 
-      /* Sticky footer styles
--------------------------------------------------- */
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 
-      html,
-      body {
-        height: 100%;
-        /* The html and body elements cannot have any padding or margin. */
-      }
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
 
-      /* Wrapper for page content to push down footer */
-      #wrap {
-        min-height: 100%;
-        height: auto !important;
-        height: 100%;
-        /* Negative indent footer by it's height */
-        margin: 0 auto -60px;
-      }
+    <link rel="shortcut icon" href="images/favicon.ico">
 
-      /* Set the fixed height of the footer here */
-      #push,
-      #footer {
-        height: 100px;
-      }
-      #footer {
-        background-color: #303030;
-      }
-
-      /* Lastly, apply responsive CSS fixes as necessary */
-      @media (max-width: 767px) {
-        #footer {
-          margin-left: -20px;
-          margin-right: -20px;
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-      }
-      </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-</head>
-
-<body>
-    
-    <div class="navbar navbar-fixed-top navbar-inverse">
-        <div class="navbar-inner">
-            <div class="container">
-
-                <a class="brand" class="active" href="index.html">Vince Rickey</a>
-
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">
-                            <li class="divider-vertical"></li>
-                            <li><a href="#">About Me</a></li>
-                            <li class="divider-vertical"></li>
-                            <li><a href="#">Web Dev Projects</a></li>
-                            <li class="divider-vertical"></li>
-                            <li><a href="resume.html">Resume</a></li>
-                            <li class="divider-vertical"></li>
-                            <li><a href="band.html">Band</a></li><!-- make with active scroll like on bootstrap's components page -->
-                            <li class="divider-vertical"></li>
-                            
-                            <li class="dropdown">
-                                        <a href"#" class="dropdown-toggle" data-toggle="dropdown">Connect</a>
-
-                                        <ul class="dropdown-menu">
-                                            <li><a href="https://twitter.com/vincerickey">twitter</a></li>
-                                            
-                                            <li><a href="http://www.linkedin.com/in/vincentrickey">linkedin</a></li>
-                                            
-                                            <li class="divider"></li>
-                                            
-                                            <li><a href="#">contact</a></li>
-
-                            </li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="landing-page-bg" style="background-image: none; width: auto; text-align: center;">
-        <img src="/imgages/france_water_header_text.jpg">
-    </div>
-
-    <!-- Changed margin-bottom (bootstrap.css line 4368) and (bootstrap-responsive.css line 961) from 20px to 0px. This fixes a white gap between the navbar and the header image. -->
-
-
-    
-    <!-- main content -->
-    <div class="container-responsive">
-
-      
-
-      <div class="row-fluid">
-        <div class="span4">
-          <ul class="thumbnails">
-            <li clas="span4">
-              <div class="thumbnail">
-                <img src="/vrickey123.github.io/imgages/webdev_icon.jpg"></img>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="span4">
-          <ul class="thumbnails">
-            <li clas="span4">
-              <div class="thumbnail">
-                <img src="http://placehold.it/250&text=Resume"></img>
-                <p class="text-center">Want to learn more about my professional history? Check out my resume.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="span4">
-          <ul class="thumbnails">
-            <li clas="span4">
-              <div class="thumbnail">
-                <img src="http://placehold.it/250&text=Band"></img>
-                <p class="text-center">I also played bass for an indie band. Take a listen!</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-      
-
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="demo-headline">
+        <h1 class="demo-logo">
+          <div class="logo"></div>
+          Vince Rickey
+          <small>Hi. Bonjour. 안녕하세요</small>
+        </h1>
       </div>
-
-
-      
-    
-
-            
-
-
-    </div><!-- end of container -->
-
-    <div id="footer">
-        <div class="container-responsive">
-            <p class="text-warning">Vince Rickey</p>
-        </div>
     </div>
+          
     
-
-            
-
-    
-
-    
-
-
-
-
-    <!-- Javascripts -->
-    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
-
-</body>
-
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/jquery.stacktable.js"></script>
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
+    <script src="js/application.js"></script>
+  </body>
 </html>
