@@ -9,6 +9,25 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      #top-tipping {
+        position: absolute;
+        background: #333;
+        height: 6px;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+
+      #bottom-tipping {
+        position: absolute;
+        background: #666;
+        height: 7px;
+        top: 11px;
+        left: 0;
+        right: 0;
+      }
+    </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,7 +38,11 @@
   </head>
   <body>
     <div class="container">
-      <h1 id="#Brand" class="page-header">vincerickey.<font color="#FFFF66">nyc</font></h1>
+      <h1 id="#Brand">vincerickey.<font color="#FFE163">nyc</font></h1>
+      <div class="wrapper tipping-wrapper">
+        <div id="top-tipping"></div>
+        <div id="bottom-tipping"></div>
+
       <h3 href="#about-me" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"><font color="#FBDD64">about me</font></h3>
         <div class="collapse" id="about-me">
           <div class="well">
