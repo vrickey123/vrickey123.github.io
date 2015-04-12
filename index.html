@@ -259,10 +259,18 @@
     
     <script type="text/javascript">
       function initialize() {
-        var mapOptions = {
-          center: { lat: -34.397, lng: 150.644},
-          zoom: 8
-        };
+        var locations = [
+          ['Beijing', 39.9388838,116.3974589, 1],
+          ['Guangzhou', 23.1255978,113.2278442, 2],
+          ['Wuhuan', 30.568116,114.3003845, 3],
+          ['Changsha', 28.1761294,113.0245972, 4],
+          ['Nanchang', 28.680929,115.904388, 5]
+          ['Oslo', 59.8938549,10.7851165, 6]
+          ['Stavanger', 58.948354,5.6800225, 7]
+          ['Lillestrom', 59.95518,11.0507538, 8]
+          ['Sandefjord', 59.1383346,10.2073827, 9]
+        ];
+        
         var map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
       }
