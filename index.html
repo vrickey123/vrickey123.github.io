@@ -74,8 +74,15 @@
       #international-recruitment {
         text-align: center;
       }
-
     </style>
+
+    <style type="text/css">
+      html, body, #map-canvas { height: 500px; width: 500px; margin: 0; padding: 0;}
+    </style>
+
+    
+    
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -184,6 +191,13 @@
           <h2 href="recruitment-abroad">Recruitment Abroad</h2>
             <div class="row">
               <div class="col-md-8">
+                <div id="map-canvas"></div>
+
+
+
+
+
+
                 <iframe
                   width="500"
                   height="500"
@@ -264,5 +278,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKMBzaj_pGhuVXHswpGGn_BlfjjbgfiVo">
+    </script>
+    
+    <script type="text/javascript">
+      function initialize() {
+         var locations = [
+          ['Beijing', 39.9388838,116.3974589, 1],
+          ['Guangzhou', 23.1255978,113.2278442, 2],
+          ['Wuhuan', 30.568116,114.3003845, 3],
+          ['Changsha', 28.1761294,113.0245972, 4],
+          ['Nanchang', 28.680929,115.904388, 5]
+          ['Oslo', 59.8938549,10.7851165, 6]
+          ['Stavanger', 58.948354,5.6800225, 7]
+          ['Lillestrom', 59.95518,11.0507538, 8]
+          ['Sandefjord', 59.1383346,10.2073827, 9]
+        ];
+        
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+    <style type="text/css">
+      html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+    </style>
+
   </body>
 </html>
