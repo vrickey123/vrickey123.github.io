@@ -10,6 +10,16 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
+      .wrapper.tipping-wrapper {
+        position: relative;
+        height: 18px !important;
+      }
+
+      .wrapper.top-wrapper, .wrapper.tipping-wrapper {
+        min-height: 0;
+        margin: 0;
+      }
+
       #top-tipping {
         position: absolute;
         background: #333;
@@ -38,10 +48,14 @@
   </head>
   <body>
     <div class="container">
+      <div class="wrapper top-wrapper">
       <h1 id="#Brand">vincerickey.<font color="#FFE163">nyc</font></h1>
+      </div><!-- end top wrapper -->
+
       <div class="wrapper tipping-wrapper">
         <div id="top-tipping"></div>
         <div id="bottom-tipping"></div>
+      </div><!-- end tipping wrapper -->  
 
       <h3 href="#about-me" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"><font color="#FBDD64">about me</font></h3>
         <div class="collapse" id="about-me">
