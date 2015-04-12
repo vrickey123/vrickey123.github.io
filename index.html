@@ -41,13 +41,20 @@
       h3 {
         font: 100px arial, sans-serif;
       }
+      
       h3:hover {
         background-color: #EED546;
         font: 100px arial, sans-serif;
         text-align: center;
       }
+      
       p {
         font: 14px arial, sans-serif;
+      }
+
+      #about-me-container-fluid {
+        color: #FFFFFF;
+        background-color: #000000;
       }
 
     </style>
@@ -60,29 +67,37 @@
     <![endif]-->
   </head>
   <body>
-    
     <div class="wrapper top-wrapper">
       <div class="container">
       <h1 id="#Brand">vincerickey<font color="#EED546">III</font></h1>
       </div>
     </div><!-- end top wrapper -->
-
     <div class="wrapper tipping-wrapper">
       <div id="top-tipping"></div>
       <div id="bottom-tipping"></div>
     </div><!-- end tipping wrapper -->  
 
     <div class="container">
-
       <h3 href="#about-me" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">about me</h3>
-
       <h3 href="#technical" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">technical</h3>
-     
       <h3 href="#international" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">international</h3>
-     
-      <h3 href="#contact" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">contact</h3>
-      
-    </div><!-- end container -->
+      <h3 href="#contact" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">contact</h3> 
+    </div><!-- end container: about me, technical, international, contact -->
+
+    <div class="container.fluid" id="about-me-container-fluid">
+      <div class="container">
+        <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">About me<span class="text-muted">Learn more about me.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="http://placehold.it/500x500" data-holder-rendered="true">
+        </div>
+      </div>
+      </div>
+
+    </div>
     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
