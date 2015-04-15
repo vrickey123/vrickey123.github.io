@@ -95,6 +95,12 @@
       src="https://maps.googleapis.com/maps/api/js?sensor=false">
     </script>
 
+    <!-- Sheetsee script for recruitment chart -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.1.0/tabletop.min.js"></script>
+    <script type="text/javascript" src="js/tabletop.js"></script>
+    <script type="text/javascript" src='js/sheetsee.js'></script>
+
 
 
 
@@ -158,7 +164,24 @@
           <h2 href="international-recruitment">International Recruitment</h2>
             <div class="row">
               <div class="col-md-8">
-                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="http://placehold.it/500x500" data-holder-rendered="true">
+
+                <div id="placeholder"></div>
+
+                  <script id="placeholder" type="text/html">
+                  // template if you so desire!
+                  </script>
+
+                  <script type="text/javascript">
+                    document.addEventListener('DOMContentLoaded', function() {
+                      var URL = "https://docs.google.com/spreadsheets/d/1xdCmm8smjEQ4MocJV4exm21LpMaXWmm4qIaldcr3490/pubhtml"
+                      Tabletop.init( { key: URL, callback: myData, simpleSheet: true } )
+                    })
+                    function myData(data) {
+                      All the sheetsee things you want to do!
+                    }
+                  </script>
+
+
               </div>
               <div class="col-md-4">
                 <ul>
