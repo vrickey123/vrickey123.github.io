@@ -88,7 +88,7 @@
         text-align: center;
       }
 
-      #barChart {
+      #pennies {
         height: 400px; 
         max-width: 600px; 
         background: #F8CDCD;
@@ -172,7 +172,7 @@
           <h2 href="international-recruitment">International Recruitment</h2>
             <div class="row">
               <div class="col-md-8">
-                <div id="barChart">
+                <div id="pennies">
                 </div>
               </div>
               <div class="col-md-4">
@@ -330,27 +330,26 @@
     <!-- Sheetsee js -->
 
     <script type="text/javascript">
-      document.addEventListener('DOMContentLoaded', function() {
-          var URL = "https://docs.google.com/spreadsheets/d/1xdCmm8smjEQ4MocJV4exm21LpMaXWmm4qIaldcr3490/pubhtml"
-          Tabletop.init( { key: URL, callback: myData, simpleSheet: true } )
-        })
-      function myData(data) {
-        var cali = Sheetsee.getOccurance(data, "enrolledStudents")
-        var colors = ['#ff00ff', '#acacac']
-        var caliData = Sheetsee.makeColorArrayOfObject(cali, colors)
-        var barOptions = {
-              labels: "name", 
-              units: "students", 
-              m: [60, 60, 30, 150], 
-              w: 600, 
-              h: 400, 
-              div: "#barChart", 
-              xaxis: "no. of pennies", 
-              hiColor: "#FF317D" }
-      
-        Sheetsee.d3BarChart(data, barOptions)
-      }
-    </script>    
+   document.addEventListener('DOMContentLoaded', function() {
+    var URL = "0Ao5u1U6KYND7dGN5QngweVJUWE16bTRob0d2a3dCbnc"
+      Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true } )
+    })
+
+    function showInfo(data) {
+      var cali = Sheetsee.getOccurance(data, "state")
+      var colors = ['#ff00ff', '#acacac']
+      var caliData = Sheetsee.makeColorArrayOfObject(cali, colors)
+      var lineOptions = { units: "units",
+                          labels: "undefined",
+                          m: [80, 100, 120, 100],
+                          w: 800, h: 400,
+                          div: "#pennies",
+                          yaxis: "pennies",
+                          hiColor: "#E4EB29"
+                        }
+      Sheetsee.d3LineChart(caliData, lineOptions)
+    }
+  </script>   
 
   </body>
 </html>
