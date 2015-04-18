@@ -80,6 +80,8 @@
       }
 
       #subsection-header-international {
+        color: #003366;
+        font-size: 60px;
       }
 
       #contact-me-container-fluid {
@@ -100,8 +102,8 @@
       }
 
       #flag {
-        height: 126px;
-        width: 240px;
+        height: 263px;
+        width: 500px;
       }
 
       #additional-responsibilities-header {
@@ -220,36 +222,38 @@
         </div><!-- end row featurette -->
 
 
-          <h2 id="subsection-header-international">Program Development</h2>
+          <h2>Program Development</h2>
           <div class="row">
             <div class="col-md-4">
-             
-                <img id="flag" src="/images/flag-norway.png" alt="flag-norway">
-              
-                  <h5 id="thumbnail-header">Norwegian Lanekassen-Eligible Bachelor’s Degree Program</h5>
-                      <p class="lead">Developed a 3-year Bachelor’s degree program that allows Norwegian students to receive 100% Lanekassen government funding </p>
-            
-              
+              <img id="flag" src="/images/flag-norway.png" alt="flag-norway">
+            </div>
+            <div class="col-md-8">
+              <h5 id="subsection-header-international">Norwegian Lanekassen-Eligible Bachelor’s Degree Program</h5>
+              <p class="lead">Developed a 3-year Bachelor’s degree program that allows Norwegian students to receive 100% Lanekassen government funding </p>
+            </div>
+          </div><!-- end Norway row -->
+
+          <div class="row">
+            <div class="col-md-8">
+              <h5 id="subsection-header-international">Chinese University Articulations</h5>
+              <p class="lead">Currently advising college community on MBA, MS in Cybersecurity, and undergraduate 2+2, 3+1, and 3+1+1 articulations with Chinese universities</p>
             </div>
             <div class="col-md-4">
+              <img id="flag" src="/images/flag-china.png" alt="flag-china">
+            </div>
+          </div><!-- end China row -->
+
+          <div class="row">
+            <div class="col-md-4">
+              <img id="flag" src="/images/flag-usa.png" alt="flag-usa">
+            </div>
+            <div class="col-md-8">
+              <h5 id="subsection-header-international">University-ESL School Partnerships and Conditional Admission Program</h5>
+              <p class="lead">Created a Conditional Admission program with local ESL schools for students who met our academic requirements, but not our English language requirements. 4-6 months ESL preparation</p>
+            </div>
+          </div><!-- end USA row -->
            
-                <img id="flag" src="/images/flag-china.png" alt="flag-china">
-                
-                  <h5>Chinese University Articulations</h5>
-                      <p class="lead">Currently advising college community on MBA, MS in Cybersecurity, and undergraduate 2+2, 3+1, and 3+1+1 articulations with Chinese universities</p>
-             
-              
-            </div>
-            <div class="col-md-4">
-             
-                <img id="flag" src="/images/flag-usa.png" alt="flag-usa">
-                
-                  <h5>University-ESL School Partnerships and Conditional Admission Program</h5>
-                      <p class="lead">Created a Conditional Admission program with local ESL schools for students who met our academic requirements, but not our English language requirements. 4-6 months ESL preparation</p>
-             
-            
-            </div>
-          </div><!-- end prorgam development row -->
+          
       
           
 
@@ -268,7 +272,8 @@
                       ['Lillestrom', 59.9551801, 11.0507538, 7],
                       ['Drammen', 59.7340217, 10.1838698, 8],
                       ['Sandefjord', 59.1383346, 10.2073827, 9],
-                      ['Stavanger', 58.948354, 5.6800225, 10]
+                      ['Stavanger', 58.948354, 5.6800225, 10],
+                      ['Jinan', 36.6429214,117.0291138, 11]
                     ];
                     
                     var map = new google.maps.Map(document.getElementById('map-canvas'), {
