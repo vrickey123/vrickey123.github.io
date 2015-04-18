@@ -88,7 +88,15 @@
         text-align: center;
       }
 
+      #barChart {
+        height: 400px; 
+        max-width: 600px; 
+        background: #F8CDCD;
+      }
+
     </style>
+
+
 
 
     <script type="text/javascript"
@@ -97,9 +105,9 @@
 
     <!-- Sheetsee script for recruitment chart -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.1.0/tabletop.min.js"></script>
     <script type="text/javascript" src="js/tabletop.js"></script>
     <script type="text/javascript" src='js/sheetsee.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/sss.css">
 
 
 
@@ -164,6 +172,8 @@
           <h2 href="international-recruitment">International Recruitment</h2>
             <div class="row">
               <div class="col-md-8">
+                <div id="barChart">
+                </div>
               </div>
               <div class="col-md-4">
                 <ul>
@@ -254,7 +264,7 @@
               </div><!-- End col-md-8 div -->
               
               <div class="col-md-4">
-                <h2>Norway / January 2015</h2>
+                <h2>Norway / January 2014</h2>
                 <h4>Ta Utdanning college fairs, high school visits, ANSA presentation on American Education System</h4>
                 <h2>China / June 2014</h2>
                 <h4>Met with 17 higher and secondary institutions to discuss 2+2, 3+1, and 3+1+1 programs; transfer articulations, and exchange partnerships</h4>
@@ -292,7 +302,9 @@
               <div class="col-md-3">
                 <h4 id="additional-responsibilities-header" href="international-business-development">International Business Development</h4>
                 <ul>
-                  <li>Facilitated MOU’s with international student recruitment agencies, participated in US Department of Commerce student fair in Kazakhstan, created a business partnership with SpanTran Credential Evaluations</li>
+                  <li>Facilitated MOU’s with international student recruitment agencies</li>
+                  <li>Participated in US Department of Commerce student fair in Kazakhstan</li>
+                  <li>Created a business partnership with SpanTran Credential Evaluations</li>
                 </ul>
               </div>
           </div><!-- end row -->
@@ -314,7 +326,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    
+
+    <!-- Sheetsee js -->
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+          var URL = "https://docs.google.com/spreadsheets/d/1xdCmm8smjEQ4MocJV4exm21LpMaXWmm4qIaldcr3490/pubhtml"
+          Tabletop.init( { key: URL, callback: myData, simpleSheet: true } )
+        })
+      function myData(data) {
+         var barOptions = {
+              labels: "name", 
+              units: "cuddleability", 
+              m: [60, 60, 30, 150], 
+              w: 600, 
+              h: 400, 
+              div: "#barChart", 
+              xaxis: "no. of pennies", 
+              hiColor: "#FF317D"}
+      
+        Sheetsee.d3BarChart(data, barOptions)
+      }
+    </script>    
 
   </body>
 </html>
