@@ -164,24 +164,6 @@
           <h2 href="international-recruitment">International Recruitment</h2>
             <div class="row">
               <div class="col-md-8">
-
-                <div id="placeholder"></div>
-
-                  <script id="placeholder" type="text/html">
-                  // template if you so desire!
-                  </script>
-
-                  <script type="text/javascript">
-                    document.addEventListener('DOMContentLoaded', function() {
-                      var URL = "https://docs.google.com/spreadsheets/d/1xdCmm8smjEQ4MocJV4exm21LpMaXWmm4qIaldcr3490/pubhtml"
-                      Tabletop.init( { key: URL, callback: myData, simpleSheet: true } )
-                    })
-                    function myData(data) {
-                      All the sheetsee things you want to do!
-                    }
-                  </script>
-
-
               </div>
               <div class="col-md-4">
                 <ul>
@@ -228,7 +210,42 @@
 
           <h2 href="recruitment-abroad">Recruitment Abroad</h2>
             <div class="row">
-              <div class="col-md-8" id="map-canvas" style="width: 500px; height: 400px"></div>
+              <div class="col-md-8"></div>
+               <div id="map-canvas" style="width: 500px; height: 400px"></div>
+
+                  <script type="text/javascript">
+                    var locations = [
+                      ['Bondi Beach', -33.890542, 151.274856, 4],
+                      ['Coogee Beach', -33.923036, 151.259052, 5],
+                      ['Cronulla Beach', -34.028249, 151.157507, 3],
+                      ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
+                      ['Maroubra Beach', -33.950198, 151.259302, 1]
+                    ];
+                    
+                    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+                      zoom: 10,
+                      center: new google.maps.LatLng(-33.92, 151.25),
+                      mapTypeId: google.maps.MapTypeId.ROADMAP
+                    });
+
+                    var infowindow = new google.maps.InfoWindow();
+
+                    var marker, i;
+
+                    for (i = 0; i < locations.length; i++) {  
+                      marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                        map: map
+                      });
+
+                      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                        return function() {
+                          infowindow.setContent(locations[i][0]);
+                          infowindow.open(map, marker);
+                        }
+                      })(marker, i));
+                    }
+                  </script>
               <div class="col-md-4">
                 <ul>
                   <li>Norway</li>
@@ -290,20 +307,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
-    
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: { lat: -34.397, lng: 150.644},
-          zoom: 8
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-
     
 
   </body>
