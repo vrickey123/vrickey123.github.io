@@ -335,7 +335,10 @@
           Tabletop.init( { key: URL, callback: myData, simpleSheet: true } )
         })
       function myData(data) {
-         var barOptions = {
+        var cali = Sheetsee.getOccurance(data, "enrolledStudents")
+        var colors = ['#ff00ff', '#acacac']
+        var caliData = Sheetsee.makeColorArrayOfObject(cali, colors)
+        var barOptions = {
               labels: "name", 
               units: "students", 
               m: [60, 60, 30, 150], 
