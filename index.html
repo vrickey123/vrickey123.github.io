@@ -22,7 +22,7 @@
 
       #top-tipping {
         position: absolute;
-        background: #003366;
+        background: #2a3138;
         height: 6px;
         top: 0;
         left: 0;
@@ -31,7 +31,7 @@
 
       #bottom-tipping {
         position: absolute;
-        background: #CCCC99;
+        background: #cccfd4;
         height: 4px;
         top: 11px;
         left: 0;
@@ -39,12 +39,34 @@
       }
 
       h3 {
-        font: 100px arial, sans-serif;
+        font: 80px arial, sans-serif;
       }
       
       h3:hover {
-        background-color: #CCCC99;
-        font: 100px arial, sans-serif;
+        
+        background-color: #556270;
+        font: 80px arial, sans-serif;
+      
+      }
+
+      if else (href="#technical") {
+          background-color: #4ECDC4;
+          font: 80px arial, sans-serif;
+        }
+
+      #international:hover {
+        background-color: #C7F464;
+        font: 80px arial, sans-serif;
+      }
+
+      #skills:hover {
+        background-color: #FF6B6B;
+        font: 80px arial, sans-serif;
+      }
+
+      #contact:hover {
+        background-color: #C44D58;
+        font: 80px arial, sans-serif;
       }
       
       p {
@@ -58,11 +80,11 @@
 
       #about-me-container-fluid {
         color: #FFFFFF;
-        background-color: #003366;
+        background-color: #556270;
       }
 
       #technical-container-fluid {
-        background-color: #E1E1D6;
+        background-color: #4ECDC4;
       }
 
       #section-header-centered {
@@ -83,7 +105,7 @@
       }
 
       #skills-container-fluid {
-        background-color: #E1E1D6;
+        background-color: #FF6B6B;
       }
 
       #education-container-fluid {
@@ -92,11 +114,11 @@
 
       #contact-me-container-fluid {
         color: #FFFFFF;
-        background-color: #003366;
+        background-color: #2A363B;
       }
 
       #international-container-fluid {
-        background-color: #FFFFFF;
+        background-color: #C7F464;
       }      
 
       #international-recruitment {
@@ -127,6 +149,26 @@
         margin-right: auto
       }
 
+      .parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(-1px) scale(2);
+}
+.parallax__layer--back {
+  transform: translateZ(-2px) scale(3);
+}
+
      
 
     </style>
@@ -148,7 +190,7 @@
   <body>
     <div class="wrapper top-wrapper">
       <div class="container">
-      <h1 id="#Brand">vincerickey<font color="#CCCC99">III</font></h1>
+      <h1 id="#Brand" style="color:#2A363B">vincerickey<font color="#cccfd4">III</font></h1>
       </div>
     </div><!-- end top wrapper -->
     <div class="wrapper tipping-wrapper">
@@ -158,10 +200,11 @@
 
     <div class="container" id="home-navigation-container">
       <div class="row">
-        <h3 href="#about-me">about me</h3>
-        <h3 href="#technical">technical</h3>
-        <h3 href="#international">international</h3>
-        <h3 href="#contact">contact</h3>
+        <h3 href="#about-me" style="color:#cccfd4">about me</h3>
+        <h3 href="#technical" style="color:#aab0b7">technical</h3>
+        <h3 href="#international" style="color:#88919a">international</h3>
+        <h3 href="#skills" style="color:#66717e">skills</h3>
+        <h3 href="#contact" style="color:#556270">contact</h3>
       </div> 
     </div><!-- end home-navigation-container -->
 
@@ -211,6 +254,15 @@
             </div><!-- end html-java-git row -->
       </div><!-- end regular container -->
     </div><!-- end about-me-container-fluid -->
+
+    <div class="parallax">
+  <div class="parallax__layer parallax__layer--back">
+    <img src="/images/great-wall.jpg">
+  </div>
+  <div class="parallax__layer parallax__layer--base">
+    <img src="Hong-Kong-Airport-Mountains.jpg">
+  </div>
+</div>
 
 
     <div class="container.fluid" id="international-container-fluid">
