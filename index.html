@@ -285,6 +285,26 @@
             <p class="lead" style="color:#FFFFFF">Leap is an app for learning the English alphabet and pronunciation using Google speech recognition. Users will first learn how to read and write the English alphabet with the help of audio recordings, the international phonetic alphabet, and their native alphabet. Next, users begin the Basic English unit with a curated list of vocabulary words and reading exercises. Google speech recognition will evaluate their pronunciation results in a pronunciation exercise, which is followed by a final quiz. Intermediate English and Everyday English units are available for purchase. Currently available in Korean.</p>
           </div>
         </div><!-- end row featurette -->
+        <h2 id="subsection-header-international">Technical Design</h2>
+        <hr>
+          <div class="row">
+              <div class="col-md-3">
+              <h4 id="additional-responsibilities-header">Data Structure</h4>
+                <p>The data structure of Leap models the hierarchical structure of a language book: an ArrayList of Units, Lessons, Exercise, ExerciseItems is passed to each new Activity or Fragment. </p>
+              </div>
+              <div class="col-md-3">
+                <h4 id="additional-responsibilities-header">User Progress</h4>
+                  <p>“Completable” and “Answerable” interfaces allow the app to track user progress after a user interacts with an item, which is then persisted using SharedPreferences.</p>
+              </div>
+              <div class="col-md-3">
+                <h4 id="additional-responsibilities-header">Locale</h4>
+                  <p>The data that is responsible for creating units is kept in locale-specific JSON file in the asset folder (for example, data-ko.json). User-facing strings, such as alert dialog messages, are kept in the String Resources. On first launch, the user is prompted to select their native language, which will load the appropriate asset file and set the locale with a configuration change. </p>
+              </div>
+              <div class="col-md-3">
+                <h4 id="additional-responsibilities-header">Speech Analysis</h4>
+                <p>The speech analysis works by using a SpeechRecognizer intent that will call a startActivityForResult method. An arraylist of of the SpeechRecognizer’s confidence scores (0-100% confidence) is used with a string contains method to assess whether a user it correct, close, or incorrect.</p>
+              </div>
+          </div><!-- end row -->
        </div> <!-- end container -->
       </div><!-- end leap container fluid -->  
 
