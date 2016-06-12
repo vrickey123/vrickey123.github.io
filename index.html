@@ -285,8 +285,30 @@
             <p class="lead" style="color:#FFFFFF">Leap is an app for learning the English alphabet and pronunciation using Google speech recognition. Users will first learn how to read and write the English alphabet with the help of audio recordings, the international phonetic alphabet, and their native alphabet. Next, users begin the Basic English unit with a curated list of vocabulary words and reading exercises. Google speech recognition will evaluate their pronunciation results in a pronunciation exercise, which is followed by a final quiz. Intermediate English and Everyday English units are available for purchase. Currently available in Korean.</p>
           </div>
         </div><!-- end row featurette -->
-        <h2 id="subsection-header-international">Technical Design</h2>
+        <h2 id="subsection-header-international">Vocabulary Lesson</h2>
         <hr>
+          <div class="row">
+              <div class="col-md-3">
+                <img class="featurette-image img-responsive" alt="technical-placeholder-img" src="http://placehold.it/250x450" data-holder-rendered="true">
+              <h4 id="additional-responsibilities-header">Vocabulary Words Exercise</h4>
+                <p>The vocabulary exercise uses a text to speech engine to speak the English vocabulary word. Users can study using a list or flashcards.</p>
+              </div>
+              <div class="col-md-3">
+                <img class="featurette-image img-responsive" alt="technical-placeholder-img" src="http://placehold.it/250x450" data-holder-rendered="true">
+                <h4 id="additional-responsibilities-header">Reading Exercise</h4>
+                  <p>The reading exercise presents select vocabulary words in a functional context. A text to speech engine speaks both the English and native language translation. </p>
+              </div>
+              <div class="col-md-3">
+                <img class="featurette-image img-responsive" alt="technical-placeholder-img" src="http://placehold.it/250x450" data-holder-rendered="true">
+                <h4 id="additional-responsibilities-header">Pronunciation Exercise</h4>
+                  <p>The pronunciation exercise uses a SpeechRecognizer intent to evaluate the user’s pronunciation using an arraylist of confidence scores. User is given a grade of correct, close, or incorrect.</p>
+              </div>
+              <div class="col-md-3">
+                <img class="featurette-image img-responsive" alt="technical-placeholder-img" src="http://placehold.it/250x450" data-holder-rendered="true">
+                <h4 id="additional-responsibilities-header">Quiz Exercise</h4>
+                <p>The quiz exercise tests the user on their comprehension of the vocabulary words. An enum value tracks the “attempt” (first try or second try) to accurately score the user. A hint is available.</p>
+              </div>
+          </div><!-- end row -->
           <div class="row">
               <div class="col-md-3">
               <h4 id="additional-responsibilities-header">Data Structure</h4>
