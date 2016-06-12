@@ -39,6 +39,48 @@
         right: 0;
       }
 
+
+      .row {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+      #home-navigation-container {
+        padding-top: 0px;
+        padding-bottom: 100px;
+      }
+
+      #about-me-container-fluid {
+        color: #FFFFFF;
+        background-color: #66717e;
+      }
+
+      #technical-container-fluid {
+        background-color: #eaebed;
+      }
+
+      #language-container-fluid {
+        background-color: #66717e;
+      }
+
+      #education-container-fluid {
+        background-color: #eaebed;
+      }
+
+      #contact-me-container-fluid {
+        color: #FFFFFF;
+        background-color: #2A363B;
+      }
+
+      #international-container-fluid {
+        background-color: #FFFFFF;
+      }      
+
+      #leap-container-fluid {
+        background-color: #66717e;
+      }
+
+
       h3 {
         font: 80px arial, sans-serif;
       }
@@ -63,9 +105,27 @@
         font-size: 18px;
       }
 
+
+      #main-section-header-centered {
+        text-align: center;
+      }
+
+      #main-lead-text-centered {
+        text-align: center;
+      }
+
+      #subsection-header {
+        text-align: center;
+      }
+
       #subsection-header-white {
         text-align: center;
         color: #FFFFFF;
+      }
+
+      #technical-subsection-header {
+        color: #000;
+        font-size: 100px;
       }
 
       #column-header-white {
@@ -73,98 +133,8 @@
         color: #FFFFFF;
       }
 
-
-
-
-
-
-      #home-navigation-container {
-        padding-top: 0px;
-        padding-bottom: 100px;
-      }
-
-      #about-me-container-fluid {
-        color: #FFFFFF;
-        background-color: #66717e;
-      }
-
-      #technical-container-fluid {
-        background-color: #eaebed;
-      }
-
-      #section-header-centered {
-        text-align: center;
-      }
-
-      #section-lead-text {
-        text-align: center;
-      }
-
-      #subsection-header {
-        color: #000;
-        font-size: 100px;
-      }
-
-      #subsection-header-international {
-        text-align: center;
-      }
-
-
-      
-
-
-
-      #language-container-fluid {
-        background-color: #66717e;
-      }
-
-      #education-container-fluid {
-        background-color: #eaebed;
-      }
-
-      #contact-me-container-fluid {
-        color: #FFFFFF;
-        background-color: #2A363B;
-      }
-
-      #international-container-fluid {
-        background-color: #FFFFFF;
-      }      
-
-      #international-recruitment {
-        text-align: center;
-      }
-
-      #leap-container-fluid {
-        background-color: #66717e;
-      }
-
       #thumbnail-header {
         text-align: center;
-      }
-
-      #flag {
-        height: 131px;
-        width: 250px;
-      }
-
-      #additional-responsibilities-header {
-        text-align: center;
-      }
-
-      #skills-subsection-header {
-        color: #003366;
-        font-size: 14px;
-      }
-
-      #skills-graph-cropped {
-        display: block;
-        margin-left: auto;
-        margin-right: auto
-      }
-
-      #flag-circle {
-        height: 300px;
       }
 
       #language-skills-header {
@@ -188,15 +158,22 @@
         text-align: center;
       }
 
-      .row {
-        padding-top: 30px;
-        padding-bottom: 30px;
+
+      #flag {
+        height: 131px;
+        width: 250px;
       }
 
-      #subsection-header-language-skills {
-        text-align: center;
-        color: #FFFFFF;
+      #skills-graph-cropped {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
       }
+
+      #flag-circle {
+        height: 300px;
+      }
+
     </style>
 
 
@@ -255,15 +232,15 @@
     <div class="container.fluid" id="technical-container-fluid">
       <div class="container">
         <div class="row featurette" id="technical-resume-header">
-          <h2 class="featurette-heading" id="section-header-centered">Technical Resume<span class="text-muted"> Learn more about my technical background.</span></h2>
-          <p class="lead" id="section-lead-text">My first experience with a technical discipline was experimenting with Twitter Bootstrap and HTML to build a personal website. I was inspired by my Moto X’s always-on voice recognition system to build an app that blended my interest in foreign language learning and natural language processing. I learned the fundamentals of object-oriented programming and Android primarily through Treehouse and CodePath tutorials, and the Android documentation.</p>
+          <h2 class="featurette-heading" id="main-section-header-centered">Technical Resume<span class="text-muted"> Learn more about my technical background.</span></h2>
+          <p class="lead" id="main-lead-text-centered">My first experience with a technical discipline was experimenting with Twitter Bootstrap and HTML to build a personal website. I was inspired by my Moto X’s always-on voice recognition system to build an app that blended my interest in foreign language learning and natural language processing. I learned the fundamentals of object-oriented programming and Android primarily through Treehouse and CodePath tutorials, and the Android documentation.</p>
         </div><!-- end technical-resume-header -->
         <div class="row" id="android-row">
           <div class="col-md-5">
             <img class="featurette-image img-responsive" alt="technical-placeholder-img" src="http://placehold.it/250x450" data-holder-rendered="true">
           </div><!-- end col-md-5 -->
           <div class="col-md-7">
-            <h2 id="subsection-header">Android</h2>
+            <h2 id="technical-subsection-header">Android</h2>
                 <p class="lead">Android is my primary focus and the area in which I have the most expertise. While I am still a junior-level developer, I have a firm grasp on the following Android concepts:</p>
                 <ul class="ulTechnical">
                   <li>Activity and Fragment Lifecycle</li>
@@ -280,11 +257,11 @@
               
             <div class="row" id="html-java-git-row">
               <div class="col-md-4">
-                <h2 id="subsection-header">HTML</h2>
+                <h2 id="technical-subsection-header">HTML</h2>
                 <p class="lead">One of my first projects was building a personal website using Bootstrap. I am familiar with HTML and CSS, as well as the basic concepts of javascript, and can build or edit a simple site if necessary.</p>
               </div>
               <div class="col-md-4">
-                <h2 id="subsection-header">Java</h2>
+                <h2 id="technical-subsection-header">Java</h2>
                 <p class="lead">My knowledge of Java stems from its use in Android. Some of the key concepts that I have implemented in my app are:</p>
                 <ul class="ulTechnical">
                   <li>Hierarchical Data Structures</li>
@@ -295,7 +272,7 @@
                 </ul>
               </div>
               <div class="col-md-4">
-                <h2 id="subsection-header">Git</h2>
+                <h2 id="technical-subsection-header">Git</h2>
                 <p class="lead">I am currently using GitHub as my version control system for Android development. I am familiar with the concepts of master, development, and feature branches; as well as making pull requests and merging new branches. I use the command line, of course.</p>
               </div>
             </div><!-- end html-java-git row -->
@@ -392,11 +369,11 @@
     <div class="container.fluid" id="international-container-fluid">
       <div class="container">
         <div class="row featurette" id="international-resume-header">
-          <h2 class="featurette-heading" id="section-header-centered">International Resume<span class="text-muted"> Learn more about my international background.</span></h2>
-          <p class="lead" id="section-lead-text">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading" id="main-section-header-centered">International Resume<span class="text-muted"> Learn more about my international background.</span></h2>
+          <p class="lead" id="main-lead-text-centered">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div><!-- end international-resume-header -->
         <div class="row featurette">
-          <h2 href="international-recruitment" id="subsection-header-international">International Recruitment</h2>
+          <h2 href="international-recruitment" id="subsection-header">International Recruitment</h2>
           <hr>
             <div class="row">
               <div class="col-md-4 col-md-offset-1">
@@ -413,7 +390,7 @@
         </div><!-- end row featurette -->
 
 
-          <h2 id="subsection-header-international">Program Development</h2>
+          <h2 id="subsection-header">Program Development</h2>
           <hr>
           <div class="row">
             <div class="col-md-4">
@@ -449,7 +426,7 @@
       
           
 
-          <h2 href="recruitment-abroad" id="subsection-header-international">Recruitment Abroad</h2>
+          <h2 href="recruitment-abroad" id="subsection-header">Recruitment Abroad</h2>
           <hr>
             <div class="row">
               <div class="col-md-8">
@@ -510,11 +487,11 @@
           
         
 
-        <h2 id="subsection-header-international">Additional Responsibilities</h2>
+        <h2 id="subsection-header">Additional Responsibilities</h2>
         <hr>
           <div class="row">
               <div class="col-md-3">
-              <h4 id="additional-responsibilities-header" href="institutional-policy-review">Institutional Policy Review</h4>
+              <h4 id="subsection-header" href="institutional-policy-review">Institutional Policy Review</h4>
                 <ul>
                   <li>Advised college to change institutional policy to be more favorable towards international enrollment and in line with competitors</li>
                   <li>Created new college-wide TOEFL/IELTS and English language proficiency policy</li>
@@ -522,13 +499,13 @@
                 </ul>
               </div>
               <div class="col-md-3">
-                <h4 id="additional-responsibilities-header" href="dso">DSO (Designated School Official)</h4>
+                <h4 id="subsection-header" href="dso">DSO (Designated School Official)</h4>
                 <ul>
                   <li>Advised all international applicants on their I-20 eligibility forms, CPT/OPT eligibility, SEVIS record transfers, change of status, and financial documentation before meeting with International Students Office for I-20 issuance</li>
                 </ul>
               </div>
               <div class="col-md-3">
-                <h4 id="additional-responsibilities-header" href="face">Foreign Academic Credential Evaluator</h4>
+                <h4 id="subsection-header" href="face">Foreign Academic Credential Evaluator</h4>
                 <ul>
                   <li>Articulated the Norwegian Vitnemal (secondary school diploma) to 30 credits of undergraduate study, allowing students to receive 100% Lanekassen government funding</li>
                   <li>Provided Scandinavian and Indian degree and grade equivalencies for select applicants</li>
@@ -536,7 +513,7 @@
                 </ul>
               </div>
               <div class="col-md-3">
-                <h4 id="additional-responsibilities-header" href="international-business-development">International Business Development</h4>
+                <h4 id="subsection-header" href="international-business-development">International Business Development</h4>
                 <ul>
                   <li>Facilitated MOU’s with international student recruitment agencies</li>
                   <li>Participated in US Department of Commerce student fair in Kazakhstan</li>
@@ -558,7 +535,7 @@
             <p class="lead" style="color:#FFFFFF">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
         </div><!-- end row featurette -->
-        <h2 id="subsection-header-language-skills">Language Skills</h2>
+        <h2 id="subsection-header-white">Language Skills</h2>
         <hr>
         <div class="row" id="English-row">
           <div class="col-md-4">
@@ -608,7 +585,7 @@
         <div class="row" style="display: inline-block;">
               <div class="col-md-4">
               <img src="http://upload.wikimedia.org/wikipedia/commons/9/95/Portland_Pilots_logo.png" height="218">
-              <h4 id="additional-responsibilities-header" href="institutional-policy-review">University of Portland</h4>
+              <h4 id="subsection-header" href="institutional-policy-review">University of Portland</h4>
                 <ul>
                   <li>Portland, Oregon</li>
                   <li>September 2009 – May 2012</li>
@@ -620,7 +597,7 @@
               </div>
               <div class="col-md-4">
               <img src="http://upload.wikimedia.org/wikipedia/en/thumb/8/80/University_of_Nantes_(logo).svg/1280px-University_of_Nantes_(logo).svg.png" width="300" height="161">
-              <h4 id="additional-responsibilities-header" href="institutional-policy-review">University of Nantes</h4>
+              <h4 id="subsection-header" href="institutional-policy-review">University of Nantes</h4>
                 <ul>
                   <li>Nantes, France</li>
                   <li>January 2012 – May 2012</li>
@@ -629,7 +606,7 @@
               </div>
               <div class="col-md-4">
               <img src="http://www.celta.kz/img/logo.png" width="300" height="89">
-              <h4 id="additional-responsibilities-header" href="institutional-policy-review">University Cambridge ESOL CELTA</h4>
+              <h4 id="subsection-header" href="institutional-policy-review">University Cambridge ESOL CELTA</h4>
                 <ul>
                   <li>New York, New York</li>
                   <li>August 2012 – September 2012</li>
