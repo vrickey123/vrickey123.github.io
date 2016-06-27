@@ -460,7 +460,8 @@
                       ['Zhoukou', 33.6210245,114.6536636, 12],
                       ['Jian', 27.108291, 114.9936926, 13],
                       ['Bergen', 60.3648957, 5.1490055, 14],
-                      ['Trondheim', 63.4187959, 10.3687229, 15]
+                      ['Trondheim', 63.4187959, 10.3687229, 15],
+                      ['Tokyo', 35.6730185,139.4302008, 16]
                     ];
                     
                     var map = new google.maps.Map(document.getElementById('map-canvas'), {
@@ -478,6 +479,10 @@
                         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
                         map: map
                       });
+
+                      if (i > 14) {
+                        marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+                      }
 
                       google.maps.event.addListener(marker, 'click', (function(marker, i) {
                         return function() {
