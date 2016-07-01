@@ -95,8 +95,8 @@
         font: 14px arial, sans-serif;
       }
 
-      .p-white {
-        font: 14px arial, sans-serif;
+      .p-leap-description {
+        font: 18px arial, sans-serif;
         color: #FFFFFF;
       }
 
@@ -132,6 +132,10 @@
       #software-subsection-header {
         color: #000;
         font-size: 100px;
+      }
+
+      #leap-subsection-description {
+        font-size: 18px;
       }
 
       #column-header-white {
@@ -317,22 +321,22 @@
               <div class="col-md-3">
                 <img class="featurette-image img-responsive" alt="device-art" src="/images/device_art_handwriting_choices.png" data-holder-rendered="true">
               <h4 id="column-header-white">Handwriting Choices</h4>
-                <p class="p-white">Users are presented with a grid of letters to practice their handwriting. The Handwriting Activity will open when a letter is selected.</p>
+                <p class="p-leap-description">Users are presented with a grid of letters to practice their handwriting. The Handwriting Activity will open when a letter is selected.</p>
               </div>
               <div class="col-md-3">
                 <img class="featurette-image img-responsive" alt="device-art" src="/images/device_art_alphabet_list.png" data-holder-rendered="true">
                 <h4 id="column-header-white">Alphabet List</h4>
-                  <p class="p-white">Users can study the sounds of the alphabet alongside their native alphabet transliteration. If the speaker button is pressed, a recording of a human’s pronunciation is played from the Raw folder.</p>
+                  <p class="p-leap-description">Users can study the sounds of the alphabet alongside their native alphabet transliteration. If the speaker button is pressed, a recording of a human’s pronunciation is played from the Raw folder.</p>
               </div>
               <div class="col-md-3">
                 <img class="featurette-image img-responsive" alt="device-art" src="/images/device_art_alphabet_flashcards.png" data-holder-rendered="true">
                 <h4 id="column-header-white">Alphabet Flashcards</h4>
-                  <p class="p-white">Users can can study the sounds of the alphabet using a flashcard format that includes both the international phonetic alphabet and their native alphabet transliteration. </p>
+                  <p class="p-leap-description">Users can can study the sounds of the alphabet using a flashcard format that includes both the international phonetic alphabet and their native alphabet transliteration. </p>
               </div>
               <div class="col-md-3">
                 <img class="featurette-image img-responsive" alt="device-art" src="/images/device_art_handwriting.png" data-holder-rendered="true">
                 <h4 id="column-header-white">Handwriting</h4>
-                <p class="p-white">Users can practice their handwriting using a simple paint tool. An erase button is provided.</p>
+                <p class="p-leap-description">Users can practice their handwriting using a simple paint tool. An erase button is provided.</p>
               </div>
           </div><!-- end row -->
         <h2 id="subsection-header-white">Vocabulary Lesson</h2>
@@ -341,22 +345,22 @@
               <div class="col-md-3">
                 <img class="featurette-image img-responsive" alt="device-art" src="/images/device_art_vocabulary.png" data-holder-rendered="true">
               <h4 id="column-header-white">Vocabulary Words Exercise</h4>
-                <p class="p-white">The vocabulary exercise uses a text to speech engine to speak the English vocabulary word. Users can study using a list or flashcards.</p>
+                <p class="p-leap-description" id="leap-subsection-description">The vocabulary exercise uses a text to speech engine to speak the English vocabulary word. Users can study using a list or flashcards.</p>
               </div>
               <div class="col-md-3">
                 <img class="featurette-image img-responsive" alt="device-art" src="/images/device_art_reading.png" data-holder-rendered="true">
                 <h4 id="column-header-white">Reading Exercise</h4>
-                  <p class="p-white">The reading exercise presents select vocabulary words in a functional context. A text to speech engine speaks both the English and native language translation. </p>
+                  <p class="p-leap-description">The reading exercise presents select vocabulary words in a functional context. A text to speech engine speaks both the English and native language translation. </p>
               </div>
               <div class="col-md-3">
                 <img class="featurette-image img-responsive" alt="device_art" src="/images/device_art_pronunciation.png" data-holder-rendered="true">
                 <h4 id="column-header-white">Pronunciation Exercise</h4>
-                  <p class="p-white">The pronunciation exercise uses a SpeechRecognizer intent to evaluate the user’s pronunciation using an arraylist of confidence scores. User is given a grade of correct, close, or incorrect.</p>
+                  <p class="p-leap-description">The pronunciation exercise uses a SpeechRecognizer intent to evaluate the user’s pronunciation using an arraylist of confidence scores. User is given a grade of correct, close, or incorrect.</p>
               </div>
               <div class="col-md-3">
                 <img class="featurette-image img-responsive" alt="device-art" src="/images/device_art_quiz.png" data-holder-rendered="true">
                 <h4 id="column-header-white">Quiz Exercise</h4>
-                <p class="p-white">The quiz exercise tests the user on their comprehension of the vocabulary words. An enum value tracks the “attempt” (first try or second try) to accurately score the user. A hint is available.</p>
+                <p class="p-leap-description">The quiz exercise tests the user on their comprehension of the vocabulary words. An enum value tracks the “attempt” (first try or second try) to accurately score the user. A hint is available.</p>
               </div>
           </div><!-- end row -->
           <h2 id="subsection-header-white">Architectural Design</h2>
@@ -364,19 +368,19 @@
           <div class="row">
               <div class="col-md-3">
               <h4 id="column-header-white">Data Structure</h4>
-                <p class="p-white">The data structure of Leap models the hierarchical structure of a language book: an ArrayList of Units, Lessons, Exercise, ExerciseItems is passed to each new Activity or Fragment. </p>
+                <p class="p-leap-description">The data structure of Leap models the hierarchical structure of a language book: an ArrayList of Units, Lessons, Exercise, ExerciseItems is passed to each new Activity or Fragment. </p>
               </div>
               <div class="col-md-3">
                 <h4 id="column-header-white">User Progress</h4>
-                  <p class="p-white">“Completable” and “Answerable” interfaces allow the app to track user progress after a user interacts with an item, which is then persisted using SharedPreferences.</p>
+                  <p class="p-leap-description">“Completable” and “Answerable” interfaces allow the app to track user progress after a user interacts with an item, which is then persisted using SharedPreferences.</p>
               </div>
               <div class="col-md-3">
                 <h4 id="column-header-white">Locale</h4>
-                  <p class="p-white">The data that is responsible for creating units is kept in locale-specific JSON file in the asset folder (for example, data-ko.json). User-facing strings, such as alert dialog messages, are kept in the String Resources. On first launch, the user is prompted to select their native language, which will load the appropriate asset file and set the locale with a configuration change. </p>
+                  <p class="p-leap-description">The data that is responsible for creating units is kept in locale-specific JSON file in the asset folder (for example, data-ko.json). User-facing strings, such as alert dialog messages, are kept in the String Resources. On first launch, the user is prompted to select their native language, which will load the appropriate asset file and set the locale with a configuration change. </p>
               </div>
               <div class="col-md-3">
                 <h4 id="column-header-white">Speech Analysis</h4>
-                <p class="p-white">The speech analysis works by using a SpeechRecognizer intent that will call a startActivityForResult method. An arraylist of of the SpeechRecognizer’s confidence scores (0-100% confidence) is used with a string contains method to assess whether a user it correct, close, or incorrect.</p>
+                <p class="p-leap-description">The speech analysis works by using a SpeechRecognizer intent that will call a startActivityForResult method. An arraylist of of the SpeechRecognizer’s confidence scores (0-100% confidence) is used with a string contains method to assess whether a user it correct, close, or incorrect.</p>
               </div>
           </div><!-- end row -->
        </div> <!-- end container -->
