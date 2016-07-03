@@ -70,9 +70,6 @@
       #leap-container-fluid {
         background-color: #66717e;
       }
-      h3 {
-        font: 80px arial, sans-serif;
-      }
           
       p {
         font: 14px arial, sans-serif;
@@ -81,12 +78,27 @@
         font: 18px arial, sans-serif;
         color: #FFFFFF;
       }
+
+
+
+
+
       .navAnchor {
         color: inherit; 
           font: 80px arial, sans-serif;
           background-color: inherit;
           padding: 24px;
       }    
+
+      @media (max-width: @screen-xs) {
+        .navAnchor{font: 10px arial, sans-serif;}
+}
+
+@media (max-width: @screen-sm) {
+    .navAnchor{font: 16px arial, sans-serif;}
+}
+
+
       .ulsoftware li{
         font-size: 18px;
       }
@@ -158,7 +170,8 @@
         display: inline-block;
         vertical-align: middle;
         float: none;
-      } 
+      }
+
     </style>
 
 
