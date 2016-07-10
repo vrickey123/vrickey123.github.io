@@ -91,6 +91,10 @@
         height: 400px;
       }
 
+      #google-docs-chart{
+        width:565px; height:334px; 
+      }
+
        @media (max-width: 767px) {
         .navAnchor{font: 64px arial, sans-serif;}
         #google-docs-chart{transform: scale(0.75, 0.75);}
@@ -178,7 +182,6 @@
         vertical-align: middle;
         float: none;
       }
-
     </style>
 
 
@@ -388,11 +391,9 @@
                 <h4>Successfully increased international enrollment</h4>
                 <h4></h4>
               </div>
-              <div class="col-md-7" id="google-docs-chart-container">
-                <div id="google-docs-chart">
-                  <iframe width="565" height="334" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1xdCmm8smjEQ4MocJV4exm21LpMaXWmm4qIaldcr3490/pubchart?oid=124284278&amp;format=interactive"></iframe>
+                <div id="google-docs-chart-container" class="col-md-7">
+                  <iframe id="google-docs-chart" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1xdCmm8smjEQ4MocJV4exm21LpMaXWmm4qIaldcr3490/pubchart?oid=124284278&amp;format=interactive"></iframe>
                 </div>
-              </div>
             </div><!-- end international recruitment row -->
         </div><!-- end row featurette -->
 
@@ -478,7 +479,7 @@
                     var map = new google.maps.Map(document.getElementById('map-canvas'), {
                       zoom: 2,
                       center: new google.maps.LatLng(40.948910, 77.573988),
-                      mapTypeId: google.maps.MapTypeId.ROADMAP
+                      mapTypeId: google.maps.MapTypeId.ROADMAP,
                     });
                     var infowindow = new google.maps.InfoWindow();
                     var marker, i;
