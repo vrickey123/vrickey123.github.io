@@ -1,9 +1,27 @@
 $mdc-theme-primary: #455a64;
-$mdc-theme-secondary: #64ffda;
+$mdc-theme-on-primary: #ffffff;
+$mdc-theme-secondary: #69f0ae;
+$mdc-theme-on-secondary: #000000;
+$mdc-theme-surface: #F5F5F6;
+$mdc-theme-on-surface: #000000;
 $mdc-theme-background: #e1e2e1;
-
+$mdc-theme-on-background: #000000;
 
 @import "@material/top-app-bar/mdc-top-app-bar";
 @import "@material/tab-bar/mdc-tab-bar";
 @import "@material/tab-scroller/mdc-tab-scroller";
 @import "@material/tab-indicator/mdc-tab-indicator";
+
+.content-container{
+	background-color: $mdc-theme-background;
+}
+
+/*.about-container{
+	background-color: $mdc-theme-surface;
+}*/
+
+.about-image{
+	max-width: 100%;
+	max-height: 500px;
+	height: auto;
+}
