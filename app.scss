@@ -1,6 +1,9 @@
-@import "@material/button/mdc-button";
+$mdc-theme-primary: #455a64;
+$mdc-theme-secondary: #64ffda;
+$mdc-theme-background: #E1E2E1;
 
-.foo-button {
-  @include mdc-button-ink-color(teal);
-  @include mdc-states(teal);
-}
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/tab-bar/mdc-tab-bar";
+@import "@material/tab-scroller/mdc-tab-scroller";
+@import "@material/tab-indicator/mdc-tab-indicator";
+@import "@material/tab/mdc-tab";
