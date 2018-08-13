@@ -42,7 +42,11 @@
   },
   "dependencies": {
     "@material/auto-init": "^0.38.0",
+    "@material/card": "^0.38.0",
+    "@material/tab": "^0.38.0",
     "@material/tab-bar": "^0.38.0",
+    "@material/tab-indicator": "^0.38.0",
+    "@material/tab-scroller": "^0.38.0",
     "@material/toolbar": "^0.38.0",
     "@material/top-app-bar": "^0.38.0",
     "material-components-web": "^0.38.0"
