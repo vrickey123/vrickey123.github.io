@@ -10,10 +10,11 @@
 
   <!-- MDC CSS -->
   <link rel="stylesheet" href="bundle.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 
   <title>Vince Rickey</title>
 </head>
-<body>
+<body class="mdc-typography">
 
  <!-- Toolbar -->	
  <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
@@ -41,8 +42,16 @@
    </div>
  </div>
 
- <!-- WSJ Row -->
- <div class="row">
+ <!-- WSJ row -->
+ <div class="row justify-content-center">
+   <div class="col-6 align-self-start">
+      <h1 class="mdc-typography--headline1">WSJ</h1>
+    </div>
+</div>
+
+ <!-- Tab bar row -->
+ <div class="row justify-content-center">
+  <div class="col-6">
    <!-- Start WSJ tab-bar -->
    <div class="mdc-tab-bar" role="tablist">
     <div class="mdc-tab-scroller">
@@ -86,7 +95,7 @@
           </button>
           <button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1" onclick="openTab(event, 'panel-android-future')">
             <span class="mdc-tab__content">
-              <span class="mdc-tab__text-label">AR Ads</span>
+              <span class="mdc-tab__text-label">Android of the Future</span>
             </span>
             <span class="mdc-tab-indicator">
               <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline" style=""></span>
@@ -97,18 +106,32 @@
       </div>
     </div>
   </div>
-</div>  
-<!-- End row -->
-
-<div class="row">
-  <div class="tab-content" id="nav-tab-content">
-    <div class="tab-panel" id="panel-redesign" role="tabpanel">redesign tab</div>
-    <div class="tab-panel" id="panel-performance" role="tabpanel">performance tab</div>
-    <div class="tab-panel" id="panel-purchasing-and-login" role="tabpanel">purchasing-and-login tab</div>
-    <div class="tab-panel" id="panel-ar-ads" role="tabpanel">ar ads tab</div>
-    <div class="tab-panel" id="panel-android-future" role="tabpanel">android future tab</div>
-  </div>
 </div>
+</div>  
+<!-- End tab bar row -->
+
+<div class="row justify-content-center">
+  <div class="col-6">
+    <div class="tab-content" id="nav-tab-content">
+
+      <div class="tab-panel" id="panel-redesign" role="tabpanel">
+        <div class="media">
+          <img class="align-self-center" alt="750x750" src="http://via.placeholder.com/750x750">
+          <div class="media-body align-self-top">
+            <h3 class="mt-0">Redesign</h5>
+              <p>We worked closely with the Design and Editorial team to rethink how we told the news in our What’s News feed. I was the Android lead on the redesign and worked with our designer to create a performant card system for over twenty new cards that brought editorial meaning through the use of font, color, and rich images.</p>
+              <p>The UX was a challenging discovery process- we worked hard to not simply use the iOS paradigm that most are familiar with and instead advocated for Material Design standards. We flattened the UX and significantly reduced the hierarchy through a unique use of the Navigation Drawer and Bottom Navigation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-performance" role="tabpanel">performance tab</div>
+        <div class="tab-panel" id="panel-purchasing-and-login" role="tabpanel">purchasing-and-login tab</div>
+        <div class="tab-panel" id="panel-ar-ads" role="tabpanel">ar ads tab</div>
+        <div class="tab-panel" id="panel-android-future" role="tabpanel">android future tab</div>
+      </div>
+    </div>
+  </div>
 
 </div>
 <!-- End content container -->
