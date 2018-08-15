@@ -44,20 +44,20 @@
  <!-- WSJ Row -->
  <div class="row">
    <!-- Start WSJ tab-bar -->
-  <div class="mdc-tab-bar" role="tablist">
+   <div class="mdc-tab-bar" role="tablist">
     <div class="mdc-tab-scroller">
       <div class="mdc-tab-scroller__scroll-area mdc-tab-scroller__scroll-area--scroll" style="margin-bottom: 0px;">
         <div class="mdc-tab-scroller__scroll-content">
-          <button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
+          <button class="mdc-tab mdc-tab--active tab-link" role="tab" aria-selected="true" tabindex="0" onclick="openTab(event, 'panel-redesign')">
             <span class="mdc-tab__content">
               <span class="mdc-tab__text-label">Redesign</span>
             </span>
-            <span class="mdc-tab-indicator">
+            <span class="mdc-tab-indicator mdc-tab-indicator--active">
               <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
             </span>
             <span class="mdc-tab__ripple"></span>
           </button>
-          <button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
+          <button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1" onclick="openTab(event, 'panel-performance')">
             <span class="mdc-tab__content">
               <span class="mdc-tab__text-label">Performance</span>
             </span>
@@ -66,27 +66,27 @@
             </span>
             <span class="mdc-tab__ripple"></span>
           </button>
-          <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+          <button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1" onclick="openTab(event, 'panel-purchasing-and-login')">
             <span class="mdc-tab__content">
               <span class="mdc-tab__text-label">Purchasing and Login</span>
-            </span>
-            <span class="mdc-tab-indicator mdc-tab-indicator--active">
-              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline" style=""></span>
-            </span>
-            <span class="mdc-tab__ripple"></span>
-          </button>
-          <button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
-            <span class="mdc-tab__content">
-              <span class="mdc-tab__text-label">Ar Ads</span>
             </span>
             <span class="mdc-tab-indicator">
               <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline" style=""></span>
             </span>
             <span class="mdc-tab__ripple"></span>
           </button>
-          <button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
+          <button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1" onclick="openTab(event, 'panel-ar-ads')">
             <span class="mdc-tab__content">
-              <span class="mdc-tab__text-label">Android of the Future</span>
+              <span class="mdc-tab__text-label">AR Ads</span>
+            </span>
+            <span class="mdc-tab-indicator">
+              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline" style=""></span>
+            </span>
+            <span class="mdc-tab__ripple"></span>
+          </button>
+          <button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1" onclick="openTab(event, 'panel-android-future')">
+            <span class="mdc-tab__content">
+              <span class="mdc-tab__text-label">AR Ads</span>
             </span>
             <span class="mdc-tab-indicator">
               <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline" style=""></span>
@@ -97,12 +97,38 @@
       </div>
     </div>
   </div>
-  <!-- End WSJ tab-bar -->
+</div>  
+<!-- End row -->
+
+<div class="row">
+  <div class="tab-content" id="nav-tab-content">
+    <div class="tab-panel" id="panel-redesign" role="tabpanel">redesign tab</div>
+    <div class="tab-panel" id="panel-performance" role="tabpanel">performance tab</div>
+    <div class="tab-panel" id="panel-purchasing-and-login" role="tabpanel">purchasing-and-login tab</div>
+    <div class="tab-panel" id="panel-ar-ads" role="tabpanel">ar ads tab</div>
+    <div class="tab-panel" id="panel-android-future" role="tabpanel">android future tab</div>
+  </div>
 </div>
 
 </div>
 <!-- End content container -->
 
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tab-panel");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tab-link");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
