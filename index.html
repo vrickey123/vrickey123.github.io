@@ -125,10 +125,13 @@
           </div>
         </div>
 
-        <div class="tab-panel" id="panel-performance" role="tabpanel">performance tab</div>
-        <div class="tab-panel" id="panel-purchasing-and-login" role="tabpanel">purchasing-and-login tab</div>
-        <div class="tab-panel" id="panel-ar-ads" role="tabpanel">ar ads tab</div>
-        <div class="tab-panel" id="panel-android-future" role="tabpanel">android future tab</div>
+        <div class="tab-panel" id="panel-performance" role="tabpanel" style="display: none">performance tab</div>
+        
+        <div class="tab-panel" id="panel-purchasing-and-login" role="tabpanel" style="display: none">purchasing-and-login tab</div>
+        
+        <div class="tab-panel" id="panel-ar-ads" role="tabpanel" style="display: none">ar ads tab</div>
+        
+        <div class="tab-panel" id="panel-android-future" role="tabpanel" style="display: none">android future tab</div>
       </div>
     </div>
   </div>
@@ -144,10 +147,10 @@ function openTab(evt, tabName) {
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tab-link");
+  /*tablinks = document.getElementsByClassName("tab-link");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+  }*/
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
