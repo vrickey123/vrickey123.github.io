@@ -1,6 +1,6 @@
-$mdc-theme-primary: #455a64;
+$mdc-theme-primary: #263238;
 $mdc-theme-on-primary: #ffffff;
-$mdc-theme-secondary: #69f0ae;
+$mdc-theme-secondary: #64ffda;
 $mdc-theme-on-secondary: #000000;
 $mdc-theme-surface: #F5F5F6;
 $mdc-theme-on-surface: #000000;
@@ -18,10 +18,18 @@ $mdc-theme-on-background: #000000;
 	background-color: $mdc-theme-background;
 }
 
-.wsj-row{
-	background-color: #1c313a;
-	color: $mdc-theme-on-secondary;
+.row-primary-light{
+	background-color: #4f5b62;
+	color: $mdc-theme-on-primary;
 }
+
+/*@mixin mdc-tab-indicator-underline-color($color){
+    color: $color;
+}
+
+.on-primary-indicator {
+    @include mdc-tab-indicator-underline-color(#64ffda);
+}*/
 
 .about-image{
 	max-width: 100%;
