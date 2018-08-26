@@ -1,0 +1,42 @@
+$mdc-theme-primary: #212121;
+$mdc-theme-on-primary: #ffffff;
+$mdc-theme-secondary: #69f0ae;
+$mdc-theme-on-secondary: #000000;
+$mdc-theme-surface: #F5F5F6;
+$mdc-theme-on-surface: #000000;
+$mdc-theme-background: #fafafa;
+$mdc-theme-on-background: #000000;
+
+/*$md-tabs-text-color: #212121;
+$md-tabs-active-text-color: #69f0ae;
+$md-tabs-indicator-color: #69f0ae;*/
+
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/tab-bar/mdc-tab-bar";
+@import "@material/tab-scroller/mdc-tab-scroller";
+@import "@material/tab-indicator/mdc-tab-indicator";
+@import "@material/tab/mdc-tab";
+@import "@material/typography/mdc-typography";
+
+.container-body {
+	background-color: $mdc-theme-background;
+}
+
+.row-primary-light {
+	background-color: #484848;
+	color: $mdc-theme-on-primary;
+}
+
+.about-image {
+	max-width: 100%;
+	max-height: 500px;
+	height: auto;
+}
+
+/*@mixin mdc-tab-indicator-underline-color($color){
+    color: $color;
+}
+
+.on-primary-indicator {
+    @include mdc-tab-indicator-underline-color(#64ffda);
+}*/
