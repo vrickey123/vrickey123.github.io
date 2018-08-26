@@ -33,9 +33,8 @@
    
      
        <div class="col-sm-12 col-md-3 offset-md-3 mr-3 align-self-center">
-         <h5 class="mt-0">Center-aligned media</h5>
-         <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-         <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+         <h5 class="mt-0">About Me</h5>
+         <p>Hi, my name is Vince and I’m currently and Android Engineer at the Wall Street Journal. I made this little website so you can keep up with my current projects at WSJ and learn about my first project, Leap, which used voice recognition to help ESL students Learn the English Alphabet and Pronunciation. Feel free to contact me if you think we would make a good team. Enjoy!</p>
        </div>
 
       <div class="col-sm-12 pt-5 pt-md-0 col-md-3 mr-md-auto align-self-center">
@@ -50,7 +49,7 @@
  <div class="row pt-5">
    <div class="col-sm-12 col-md-6 offset-md-3 align-self-start">
       <h1 class="mdc-typography--headline1 pb-3">WSJ</h1>
-      <p>Lorem ipsum dolor sit amet</p>
+      <p>I am currently an Android Software Engineer at the Wall Street Journal. While working there, I’ve worked on the redesign, app performance, a new purchasing and login stack, an AR ad project with Google, and refactoring to use Android Architecture Components.</p>
     </div>
   </div>
 
@@ -134,7 +133,8 @@
         <img class="col-sm-12 col-md-3 offset-md-3 align-self-center" alt="750x750" src="http://via.placeholder.com/750x750">
         <div class="col-sm-12 col-md-3 align-self-top pt-5 pt-md-0">
           <h3>Performance</h5>
-          <p>Lorem ipsum dolor sit amet</p>
+          <p>The redesign brought 20+ different cards with hundreds of variants controlled by a mobile editorial web curation tool into our feed. By abstracting out the layout composition and text styles, and by using an inversion of control Recycler View system, we were able to condense these into about 8 cards.</p>
+          <p>Every card used a completely flat XML layout with Constraint Layout, which helped us consistently keep 60fps scroll performance. We were able to do this all while supporting down to API 16 (2012 devices!) and didn’t lose a single subscriber.</p>
       </div>
       </div>
     </div> 
@@ -143,7 +143,17 @@
         <img class="col-sm-12 col-md-3 offset-md-3 align-self-center" alt="750x750" src="http://via.placeholder.com/750x750">
         <div class="col-sm-12 col-md-3 align-self-top pt-5 pt-md-0">
           <h3>Purchasing and Login</h5>
-          <p>Lorem ipsum dolor sit amet</p>
+          <p>There are many ways to subscribe to WSJ- through Google Play, the Apple App Store, web, phone, etc. - which leads to a very complex login and entitlement system. I was the lead on a Single Sign On project that tied subscriptions through the Google, Amazon, and Samsung with our other entry points; the goal being able to purchase and sign on from any device on any platform with your subscription.</p>
+          <p>The technical details included setting up purchasing and receipt verification for all three Android stores as well as an Auth0-backed login and entitlement system.</p>
+      </div>
+      </div>
+    </div> 
+    <div class="tab-panel" id="panel-ar-ads" role="tabpanel" style="display: none">
+      <div class="row">
+        <img class="col-sm-12 col-md-3 offset-md-3 align-self-center" alt="750x750" src="http://via.placeholder.com/750x750">
+        <div class="col-sm-12 col-md-3 align-self-top pt-5 pt-md-0">
+          <h3>AR Ads</h5>
+          <p>We were an early partner with Google to deliver an interactive and more enjoyable ad experience to our readers. Early partners included Nestle and Ford.</p>
       </div>
       </div>
     </div> 
@@ -153,15 +163,7 @@
         <div class="col-sm-12 col-md-3 align-self-top pt-5 pt-md-0">
           <h3>AR Ads</h5>
           <p>Lorem ipsum dolor sit amet</p>
-      </div>
-      </div>
-    </div> 
-    <div class="tab-panel" id="panel-ar-ads" role="tabpanel" style="display: none">
-      <div class="row">
-        <img class="col-sm-12 col-md-3 offset-md-3 align-self-center" alt="750x750" src="http://via.placeholder.com/750x750">
-        <div class="col-sm-12 col-md-3 align-self-top pt-5 pt-md-0">
-          <h3>AR Ads</h5>
-          <p>Lorem ipsum dolor sit amet</p>
+          <p></p>
       </div>
       </div>
     </div> 
@@ -170,7 +172,8 @@
         <img class="col-sm-12 col-md-3 offset-md-3 align-self-center" alt="750x750" src="http://via.placeholder.com/750x750">
         <div class="col-sm-12 col-md-3 align-self-top pt-5 pt-md-0">
           <h3>Android of the Future</h5>
-          <p>Lorem ipsum dolor sit amet</p>
+          <p>Working on an Android app with millions of users that originally began in 2010 brings with it a lot of history. It has seen design patterns like MVP move in and out of popularity, and changes in Google’s attitudes towards Activities and Fragments.</p>
+          <p>Refactoring to support Bottom Navigation through a single Activity; and evaluating Architecture Components, MVVM, and Kotlin without affecting our users is a big challenge. We’re aiming to change the architecture of our app to support the Android of the future.</p>
       </div>
       </div>
     </div> 
@@ -182,7 +185,7 @@
   <div class="row row-primary-light pt-5 pb-3">
     <div class="col-sm-6 offset-md-3 align-self-start">
       <h1 class="mdc-typography--headline1 pb-3">Leap</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Leap was an app for learning the English alphabet and pronunciation using Google speech recognition. First, students learn how to read and write the English alphabet with the help of audio recordings, the international phonetic alphabet, and their native alphabet. Next, students begin the Basic English unit with a curated list of vocabulary words and reading exercises. Google speech recognition evaluates their pronunciation results, which is followed by a quiz. The app was targeted for a Korean ESL audience (go Samsung!) and was first launched in Korean. Sadly it was taken off the Google Play Store after GDPR privacy regulations (we required the microphone without a privacy policy), but keep an eye out for an update!</p>
     </div>
   </div>
 
@@ -211,26 +214,29 @@
   <!-- Language and Travel -->
   <div class="row pt-5 pb-3">
     <div class="col-sm-6 offset-md-3 align-self-start">
-      <h1 class="mdc-typography--headline1 pb-3">Language and Travel</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h1 class="mdc-typography--headline1 pb-3">Language</h1>
+      <p>Learning foreign languages is one of my passions. As a foreign language major in college, I had the opportunity to study abroad in France which eventually inspired me to work in ESL and international education, and to eventually create Leap.</p>
     </div>
   </div>
 
   <div class="row justify-content-center pb-5">
     <div class="col-sm-2 mr-1">
-      <img class="img-fluid" alt="300x200" src="https://via.placeholder.com/300X200">
+      <img class="img-fluid" alt="300x200" src="/img/flag-usa.png">
       <h3 class="mdc-typography--headline3 pt-3">English</h3>
-      <p>Lorem ipsum dolor sit amet</p>
+      <h5 class="mdc-typography--headline5 pt-3">Native</h5>
+      <p>You might see me at a Language exchange!</p>
     </div> 
     <div class="col-sm-2 mr-1">
-      <img class="img-fluid" alt="300x200" src="https://via.placeholder.com/300X200">
+      <img class="img-fluid" alt="300x200" src="/img/flag-france.png">
       <h3 class="mdc-typography--headline3 pt-3">French</h3>
-      <p>Lorem ipsum dolor sit amet</p>
+      <h5 class="mdc-typography--headline5 pt-3">CEFR B2 / Full Professional</h5>
+      <p>Il y a six ans, je suis allé à l’Université de Nantes où je me suis spécialisé en le français et la philo.</p>
     </div>
     <div class="col-sm-2">
-      <img class="img-fluid" alt="300x200" src="https://via.placeholder.com/300X200">
+      <img class="img-fluid" alt="300x200" src="/img/flag-japan.png">
       <h3 class="mdc-typography--headline3 pt-3">Japanese</h3>
-      <p>Lorem ipsum dolor sit amet</p>
+      <h5 class="mdc-typography--headline5 pt-3">JLPT 4 / Low Intermediate</h5
+      <p>ジャパンソサエティーで日本語を勉強しています!</p>
     </div>
   </div>
   <!-- End Language and Travel -->
@@ -238,8 +244,10 @@
   <!-- Footer -->
   <div class="row row-primary-light pt-5 pb-5">
     <div class="col-sm-6 offset-md-3">
-      <h3 class="mdc-typography--headline3 pb-3">Footer</h3>
-      <p>Lorem ipsum dolor sit amet</p>
+      <h3 class="mdc-typography--headline3 pb-3">Contact Me</h3>
+      <p>Email <a href="mailto:vince.rickey@gmail.com" style="background-color: inherit; color:#4F84FF">vince.rickey@gmail.com</a></p>
+      <p>LinkedIn <a href="https://www.linkedin.com/in/vincentrickey" style="background-color: inherit; color:#4F84FF">https://www.linkedin.com/in/vincentrickey</a></p>
+      <p>GitHub <a href="https://github.com/vrickey123" style="background-color: inherit; color:#4F84FF">https://github.com/vrickey123</a></p>
     </div> 
   </div>
 
