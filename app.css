@@ -1,0 +1,20 @@
+/* Static CSS with CSS Custom Properties */
+:root {
+  --mdc-theme-primary: #212121;
+  --mdc-theme-on-primary: #ffffff;
+  --mdc-theme-secondary: #69f0ae;
+  --mdc-theme-on-secondary: #000000;
+  --mdc-theme-surface: #F5F5F6;
+  --mdc-theme-on-surface: #000000;
+  --mdc-theme-background: #fafafa;
+  --mdc-theme-on-background: 000000;
+}
+
+.container-body {
+	background-color: #fafafa;
+}
+
+.row-primary-light {
+	background-color: #484848;
+	color: #ffffff;
+}
