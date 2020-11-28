@@ -6,7 +6,7 @@ const TopNavBar = (props) => (
       <Nav classname="sections">
         <NavLink href="#wsj">WSJ</NavLink>
         <NavLink href="opensource">Open Source</NavLink>
-        <NavLink href="#wsj">Foreign Languages</NavLink>
+        <NavLink href="#foreignlanguages">Foreign Languages</NavLink>
       </Nav>
       <Nav>
         <NavLink href="#resume">Resume</NavLink>
