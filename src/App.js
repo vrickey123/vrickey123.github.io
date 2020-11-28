@@ -3,19 +3,16 @@ import TopNavBar from './components/TopNavBar'
 import './App.css';
 import ResumeItem from './components/ResumeItem';
 import OpenSourceCard from './components/OpenSourceCard'
+import LandingPage from './components/LandingPage'
 
 function App() {
   return (
     <div>
       <TopNavBar />
       <Container fluid>
+      <LandingPage title="Vince Rickey" summary="Software Engineer"/>
         <Row>
           <Col>
-            <Container className="vh-100 d-flex flex-column ">
-              <Row className="h-100">
-                <h1>Vince Rickey</h1>
-              </Row>
-            </Container>
             <h1>WSJ</h1>
             <Row>
               <ResumeItem title="Redesign" summary="Redesign Summary" />
