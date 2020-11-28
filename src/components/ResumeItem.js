@@ -10,7 +10,7 @@ const ResumeItem = (props) => (
                 <p>{props.summary}</p>
             </Col>
             <Col>
-                <Image src="https://via.placeholder.com/300" rounded></Image>
+                <Image src="https://via.placeholder.com/500" rounded></Image>
             </Col>
         </Row>
     </Col>
