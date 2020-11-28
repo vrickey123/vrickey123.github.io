@@ -2,17 +2,9 @@ import { Row, Col, Image } from 'react-bootstrap';
 
 const ResumeItem = (props) => (
     <Col>
-        <Row>
-            <h2>{props.title}</h2>
-        </Row>
-        <Row>
-            <Col xs={6}>
-                <p>{props.summary}</p>
-            </Col>
-            <Col>
-                <Image src="https://via.placeholder.com/500" rounded></Image>
-            </Col>
-        </Row>
+        <Image src="https://via.placeholder.com/500" rounded></Image>
+        <h2>{props.title}</h2>
+        <p>{props.summary}</p>
     </Col>
 );
 
