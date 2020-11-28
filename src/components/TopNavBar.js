@@ -14,4 +14,4 @@ const TopNavBar = (props) => (
     </Navbar>
   );
 
-  export default TopNavBar
+  export default TopNavBar;

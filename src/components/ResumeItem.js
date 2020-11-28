@@ -16,4 +16,4 @@ const ResumeItem = (props) => (
     </Col>
 );
 
-export default ResumeItem
+export default ResumeItem;
