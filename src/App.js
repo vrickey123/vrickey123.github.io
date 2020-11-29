@@ -1,6 +1,7 @@
 import { Container, Row, Col, CardDeck } from 'react-bootstrap';
 import TopNavBar from './components/TopNavBar'
 import './App.css';
+import Strings from './strings';
 import OpenSourceCard from './components/OpenSourceCard'
 import LandingPage from './components/LandingPage'
 import LeftAlignedResumeItem from './components/LeftAlignedResumeItem';
@@ -15,36 +16,36 @@ function App() {
       <Container>
         <Row>
           <Col md={{ span: 8, offset: 0 }}>
-            <LandingPage title="Vince Rickey" summary="Software Engineer with five years of experience in Android. Learning Web and iOS." />
+            <LandingPage title={Strings.NAME} summary={Strings.ABOUT} />
           </Col>
         </Row>
-        <h2 class="display-2" id="wsj">WSJ</h2>
+  <h2 class="display-2" id="wsj">{Strings.HEADER_WSJ}</h2>
         <Row>
           <Col className="justify-content-around">
-            <LeftAlignedResumeItem title="Redesign" subtitle="Design System and Editorial Tools" summary="" src="/panel-redesign.png" />
+            <LeftAlignedResumeItem title={Strings.RESUME_TITLE} subtitle={Strings.RESUME_SUMMARY} summary={Strings.RESUME_SUMMARY} src="/panel-redesign.png" />
             <Divider height="2.5px" />
-            <RightAlignedResumeItem title="Purchasing and Login" subtitle="Auth0 and Google Play Billing" summary="" src="/panel-login.png" />
+            <RightAlignedResumeItem title={Strings.PURCHASING_TITLE} subtitle={Strings.PURCHASING_SUBTITLE} summary={Strings.REDESIGN_SUMMARY} src="/panel-login.png" />
             <Divider height="2.5px" />
-            <LeftAlignedResumeItem title="Architecture Discovery" subtitle="MVP, MVVM, MVI" summary="" src="/panel-performance.png" />
+            <LeftAlignedResumeItem title={Strings.ARCH_TITLE} subtitle={Strings.ARCH_SUBTITLE} summary={Strings.ARCH_SUMMARY} src="/panel-performance.png" />
             <Divider height="2.5px" />
-            <RightAlignedResumeItem title="Server-Driven UI" subtitle="Jetpack Compose and Swift UI" summary="" src="/panel-android-p.png" />
+            <RightAlignedResumeItem title={Strings.UI_TITLE} subtitle={Strings.UI_SUBTITLE} summary={Strings.UI_SUMMARY} src="/panel-android-p.png" />
             <Divider height="2.5px" />
-            <LeftAlignedResumeItem title="Graph QL" subtitle="Unified Data Model" summary="test" src="/panel-ar-ad.png" />
+            <LeftAlignedResumeItem title={Strings.GRAPH_TITLE} subtitle={Strings.GRAPH_SUBTITLE} summary={Strings.GRAPH_SUMMARY} src="/panel-ar-ad.png" />
           </Col>
         </Row>
-        <h2 class="display-2" id="opensource">Open Source</h2>
+        <h2 class="display-2" id="opensource">{Strings.HEADER_OPEN_SOURCE}</h2>
         <Row>
           <Col>
             <CardDeck>
-              <OpenSourceCard header="Android" title="Leap for WaniKani" summary="Leap for WaniKani Summary" gitHubUrl="https://github.com/vrickey123/LeapForWaniKani" playStoreUrl="https://play.google.com/store/apps/details?id=com.leapsoftware.leapforwanikani&hl=en_US" />
-              <OpenSourceCard header="Web" title="Resume Website" summary="Resume Website Summary" gitHubUrl="https://github.com/vrickey123/vrickey123.github.io" />
-              <OpenSourceCard header="Android" title="Adapter Delegate Cards" summary="Adapter Delegate Cards Summary" gitHubUrl="https://github.com/vrickey123/AdapterDelegateCards" />
-              <OpenSourceCard header="Android" title="Twitter Username RxJava" summary="Twitter Username RxJava Summary" gitHubUrl="https://github.com/vrickey123/TwitterUsername" />
+              <OpenSourceCard header={Strings.HEADER_ANDROID} title={Strings.LFWK_NAME} summary={Strings.LFWK_SUMMARY} gitHubUrl={Strings.URL_GITHUB_LFWK} playStoreUrl={Strings.URL_PLAY_LFWK} />
+              <OpenSourceCard header={Strings.HEADER_WEB}  title={Strings.RESUME_TITLE} summary={Strings.RESUME_SUMMARY} gitHubUrl={Strings.URL_GITHUB_RESUME} />
+              <OpenSourceCard header={Strings.HEADER_ANDROID}  title={Strings.ADAPTER_TITLE} summary={Strings.ADAPTER_SUMMARY} gitHubUrl={Strings.URL_GITHUB_ADAPTER} />
+              <OpenSourceCard header={Strings.HEADER_ANDROID} title={Strings.TWITTER_TITLE} summary={Strings.TWITTER_SUMMARY} gitHubUrl={Strings.URL_GITHUB_TWITTER} />
             </CardDeck>
           </Col>
         </Row>
       </Container>
-      <Footer title="Contact" gitHubUrl="https://github.com/vrickey123" linkedInUrl="https://www.linkedin.com/in/vincentrickey" />
+      <Footer title={Strings.CONTACT} gitHubUrl={Strings.URL_GITHUB} linkedInUrl={Strings.URL_LINKEDIN} />
     </div>
   );
 }
