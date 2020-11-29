@@ -10,10 +10,14 @@ function App() {
     <div>
       <TopNavBar />
       <Container fluid>
-      <LandingPage title="Vince Rickey" summary="Software Engineer"/>
+        <Row>
+          <Col md={{ span: 6, offset: 2 }}>
+            <LandingPage title="Vince Rickey" summary="Software Engineer with five years of experience in Android. Learning Web and iOS." />
+          </Col>
+        </Row>
         <Row>
           <Col>
-            <h1>WSJ</h1>
+            <h2 class="display-2">WSJ</h2>
             <Row>
               <ResumeItem title="Redesign" summary="Redesign Summary" />
               <ResumeItem title="In-App Purchases and Login" summary="Summary" />
@@ -21,7 +25,7 @@ function App() {
               <ResumeItem title="Server-Driven UI with Jetpack Compose and Swift UI" summary="Summary" />
               <ResumeItem title="GraphQL and Unified Data Model" summary="Summary" />
             </Row>
-            <h1>Open Source</h1>
+            <h2 class="display-2">Open Source</h2>
             <Row>
               <Col>
                 <CardDeck>
