@@ -35,10 +35,10 @@ function App() {
           <Col>
             <Row>
               <CardDeck>
-                <OpenSourceCard header="Android" title="Leap for WaniKani" summary="Leap for WaniKani Summary" hasPlayStoreLink="true"/>
-                <OpenSourceCard header="Web" title="Resume Website" summary="Resume Website Summary" />
-                <OpenSourceCard header="Android" title="Adapter Delegate Cards" summary="Adapter Delegate Cards Summary" />
-                <OpenSourceCard header="Android" title="Twitter Username RxJava" summary="Twitter Username RxJava Summary" />
+                <OpenSourceCard header="Android" title="Leap for WaniKani" summary="Leap for WaniKani Summary" gitHubUrl="https://github.com/vrickey123/LeapForWaniKani" playStoreUrl="https://play.google.com/store/apps/details?id=com.leapsoftware.leapforwanikani&hl=en_US"/>
+                <OpenSourceCard header="Web" title="Resume Website" summary="Resume Website Summary" gitHubUrl="https://github.com/vrickey123/vrickey123.github.io" />
+                <OpenSourceCard header="Android" title="Adapter Delegate Cards" summary="Adapter Delegate Cards Summary" gitHubUrl="https://github.com/vrickey123/AdapterDelegateCards" />
+                <OpenSourceCard header="Android" title="Twitter Username RxJava" summary="Twitter Username RxJava Summary" gitHubUrl="https://github.com/vrickey123/TwitterUsername" />
               </CardDeck>
             </Row>
           </Col>

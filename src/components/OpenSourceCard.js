@@ -2,10 +2,10 @@ import { Button, Card } from 'react-bootstrap';
 
 function OpenSourceCard(props) {
     var cardBody;
-    if (props.hasPlayStoreLink) {
-        cardBody = <CardBodyGithubAndGoogleButtons title={props.title} summary={props.summary} />;
+    if (props.playStoreUrl) {
+        cardBody = <CardBodyGithubAndGoogleButtons title={props.title} summary={props.summary} gitHubUrl={props.gitHubUrl} playStoreUrl={props.playStoreUrl} />;
     } else {
-        cardBody = <CardBodyGithubButton title={props.title} summary={props.summary} />;
+        cardBody = <CardBodyGithubButton title={props.title} summary={props.summary} gitHubUrl={props.gitHubUrl} />;
     }
     return (
         <Card style={{ width: '18rem' }} bg="light" className="mb-2">
@@ -20,7 +20,7 @@ const CardBodyGithubButton = (props) => (
     <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.summary}</Card.Text>
-        <Button variant="primary">GitHub</Button>
+        <Button variant="primary" href={props.gitHubUrl}>GitHub</Button>
     </Card.Body>
 );
 
@@ -28,8 +28,8 @@ const CardBodyGithubAndGoogleButtons = (props) => (
     <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.summary}</Card.Text>
-        <Button variant="primary" className="mr-1">GitHub</Button>
-        <Button variant="secondary" className="ml-1">Google Play</Button>
+        <Button variant="primary" className="mr-1" href={props.gitHubUrl}>GitHub</Button>
+        <Button variant="secondary" className="ml-1" href={props.playStoreUrl}>Google Play</Button>
     </Card.Body>
 );
 
