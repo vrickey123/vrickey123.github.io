@@ -6,6 +6,7 @@ import LandingPage from './components/LandingPage'
 import LeftAlignedResumeItem from './components/LeftAlignedResumeItem';
 import RightAlignedResumeItem from './components/RightAlignedResumeItem';
 import Footer from './components/Footer';
+import Divider from './components/Divider';
 
 function App() {
   return (
@@ -20,15 +21,15 @@ function App() {
         <h2 class="display-2" id="wsj">WSJ</h2>
         <Row>
           <Col className="justify-content-around">
-            <LeftAlignedResumeItem title="Redesign" subtitle="Design System and Editorial Tools" summary="" />
-            <div class="rounded bg-dark" style={{ height: 2.5 }} />
-            <RightAlignedResumeItem title="Purchasing and Login" subtitle="Auth0 and Google Play Billing" summary="" />
-            <div class="rounded bg-dark" style={{ height: 2.5 }} />
-            <LeftAlignedResumeItem title="Architecture Discovery" subtitle="MVP, MVVM, MVI" summary="" />
-            <div class="rounded bg-dark" style={{ height: 2.5 }} />
-            <RightAlignedResumeItem title="Server-Driven UI" subtitle="Jetpack Compose and Swift UI" summary="" />
-            <div class="rounded bg-dark" style={{ height: 2.5 }} />
-            <LeftAlignedResumeItem title="Graph QL" subtitle="Unified Data Model" summary="test" />
+            <LeftAlignedResumeItem title="Redesign" subtitle="Design System and Editorial Tools" summary="" src="/panel-redesign.png" />
+            <Divider height="2.5px"/>
+            <RightAlignedResumeItem title="Purchasing and Login" subtitle="Auth0 and Google Play Billing" summary="" src="/panel-login.png"/>
+            <Divider height="2.5px"/>
+            <LeftAlignedResumeItem title="Architecture Discovery" subtitle="MVP, MVVM, MVI" summary="" src="/panel-performance.png"/>
+            <Divider height="2.5px"/>
+            <RightAlignedResumeItem title="Server-Driven UI" subtitle="Jetpack Compose and Swift UI" summary="" src="/panel-android-p.png"/>
+            <Divider height="2.5px"/>
+            <LeftAlignedResumeItem title="Graph QL" subtitle="Unified Data Model" summary="test" src="/panel-ar-ad.png"/>
           </Col>
         </Row>
         <h2 class="display-2" id="opensource">Open Source</h2>
