@@ -18,12 +18,16 @@ function App() {
         </Row>
         <h2 class="display-2">WSJ</h2>
         <Row>
-          <Col>
-            <LeftAlignedResumeItem title="Redesign" summary="" />
-            <RightAlignedResumeItem title="Purchasing and Login" summary="" />
-            <LeftAlignedResumeItem title="Architecture Discovery" summary="" />
-            <RightAlignedResumeItem title="Server-Driven UI with Jetpack Compose and Swift UI" summary="" />
-            <LeftAlignedResumeItem title="Graph QL and Unified Data Model" summary="test" />
+          <Col className="justify-content-around">
+            <LeftAlignedResumeItem title="Redesign" subtitle="Design System and Editorial Tools" summary="" />
+            <div class="rounded bg-dark" style={{height: 2.5}}/>
+            <RightAlignedResumeItem title="Purchasing and Login" subtitle="Auth0 and Google Play Billing" summary="" />
+            <div class="rounded bg-dark" style={{height: 2.5}}/>
+            <LeftAlignedResumeItem title="Architecture Discovery" subtitle="MVP, MVVM, MVI" summary="" />
+            <div class="rounded bg-dark" style={{height: 2.5}}/>
+            <RightAlignedResumeItem title="Server-Driven UI" subtitle="Jetpack Compose and Swift UI" summary="" />
+            <div class="rounded bg-dark" style={{height: 2.5}}/>
+            <LeftAlignedResumeItem title="Graph QL" subtitle="Unified Data Model" summary="test" />
           </Col>
         </Row>
         <h2 class="display-2">Open Source</h2>
