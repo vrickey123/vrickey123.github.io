@@ -8,7 +8,7 @@ function OpenSourceCard(props) {
         cardBody = <CardBodyGithubButton title={props.title} summary={props.summary} gitHubUrl={props.gitHubUrl} />;
     }
     return (
-        <Card style={{ width: '18rem' }} bg="light" className="mb-2">
+        <Card bg="light" className="mt-5 mb-5">
             <Card.Header className="text-muted">{props.header}</Card.Header>
             {/* <Card.Img variant="top" src="https://via.placeholder.com/150" /> */}
             {cardBody}

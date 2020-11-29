@@ -5,37 +5,38 @@ import OpenSourceCard from './components/OpenSourceCard'
 import LandingPage from './components/LandingPage'
 import LeftAlignedResumeItem from './components/LeftAlignedResumeItem';
 import RightAlignedResumeItem from './components/RightAlignedResumeItem';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div>
-      <TopNavBar />
+      <TopNavBar resumeUrl="https://docs.google.com/document/d/1sODXvbf0u687PYut1KaJKPpaLDFIYJjszgkopTOiOMU/edit?usp=sharing"/>
       <Container>
         <Row>
           <Col md={{ span: 8, offset: 0 }}>
             <LandingPage title="Vince Rickey" summary="Software Engineer with five years of experience in Android. Learning Web and iOS." />
           </Col>
         </Row>
-        <h2 class="display-2">WSJ</h2>
+        <h2 class="display-2" id="wsj">WSJ</h2>
         <Row>
           <Col className="justify-content-around">
             <LeftAlignedResumeItem title="Redesign" subtitle="Design System and Editorial Tools" summary="" />
-            <div class="rounded bg-dark" style={{height: 2.5}}/>
+            <div class="rounded bg-dark" style={{ height: 2.5 }} />
             <RightAlignedResumeItem title="Purchasing and Login" subtitle="Auth0 and Google Play Billing" summary="" />
-            <div class="rounded bg-dark" style={{height: 2.5}}/>
+            <div class="rounded bg-dark" style={{ height: 2.5 }} />
             <LeftAlignedResumeItem title="Architecture Discovery" subtitle="MVP, MVVM, MVI" summary="" />
-            <div class="rounded bg-dark" style={{height: 2.5}}/>
+            <div class="rounded bg-dark" style={{ height: 2.5 }} />
             <RightAlignedResumeItem title="Server-Driven UI" subtitle="Jetpack Compose and Swift UI" summary="" />
-            <div class="rounded bg-dark" style={{height: 2.5}}/>
+            <div class="rounded bg-dark" style={{ height: 2.5 }} />
             <LeftAlignedResumeItem title="Graph QL" subtitle="Unified Data Model" summary="test" />
           </Col>
         </Row>
-        <h2 class="display-2">Open Source</h2>
+        <h2 class="display-2" id="opensource">Open Source</h2>
         <Row>
           <Col>
             <Row>
               <CardDeck>
-                <OpenSourceCard header="Android" title="Leap for WaniKani" summary="Leap for WaniKani Summary" gitHubUrl="https://github.com/vrickey123/LeapForWaniKani" playStoreUrl="https://play.google.com/store/apps/details?id=com.leapsoftware.leapforwanikani&hl=en_US"/>
+                <OpenSourceCard header="Android" title="Leap for WaniKani" summary="Leap for WaniKani Summary" gitHubUrl="https://github.com/vrickey123/LeapForWaniKani" playStoreUrl="https://play.google.com/store/apps/details?id=com.leapsoftware.leapforwanikani&hl=en_US" />
                 <OpenSourceCard header="Web" title="Resume Website" summary="Resume Website Summary" gitHubUrl="https://github.com/vrickey123/vrickey123.github.io" />
                 <OpenSourceCard header="Android" title="Adapter Delegate Cards" summary="Adapter Delegate Cards Summary" gitHubUrl="https://github.com/vrickey123/AdapterDelegateCards" />
                 <OpenSourceCard header="Android" title="Twitter Username RxJava" summary="Twitter Username RxJava Summary" gitHubUrl="https://github.com/vrickey123/TwitterUsername" />
@@ -44,6 +45,7 @@ function App() {
           </Col>
         </Row>
       </Container>
+      <Footer title="Contact" gitHubUrl="https://github.com/vrickey123" linkedInUrl="https://www.linkedin.com/in/vincentrickey" />
     </div>
   );
 }
