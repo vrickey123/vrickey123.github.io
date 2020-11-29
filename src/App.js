@@ -1,42 +1,41 @@
-import { Container, Row, Col, CardDeck, Jumbotron, CardGroup } from 'react-bootstrap';
+import { Container, Row, Col, CardDeck } from 'react-bootstrap';
 import TopNavBar from './components/TopNavBar'
 import './App.css';
-import ResumeItem from './components/ResumeItem';
 import OpenSourceCard from './components/OpenSourceCard'
 import LandingPage from './components/LandingPage'
+import LeftAlignedResumeItem from './components/LeftAlignedResumeItem';
+import RightAlignedResumeItem from './components/RightAlignedResumeItem';
 
 function App() {
   return (
     <div>
       <TopNavBar />
-      <Container fluid>
+      <Container>
         <Row>
-          <Col md={{ span: 6, offset: 2 }}>
+          <Col md={{ span: 8, offset: 0 }}>
             <LandingPage title="Vince Rickey" summary="Software Engineer with five years of experience in Android. Learning Web and iOS." />
           </Col>
         </Row>
+        <h2 class="display-2">WSJ</h2>
         <Row>
           <Col>
-            <h2 class="display-2">WSJ</h2>
-            <Col md={{ span: 8, offset: 4 }}>
-              <Row xs={1} s={1} md={3} lg={4} xl={5}>
-                <ResumeItem title="Redesign" summary="Redesign Summary" />
-                <ResumeItem title="In-App Purchases and Login" summary="Summary" />
-                <ResumeItem title="Architecture Discovery: MVP, MVVM, MVI" summary="Summary" />
-                <ResumeItem title="Server-Driven UI with Jetpack Compose and Swift UI" summary="Summary" />
-                <ResumeItem title="GraphQL and Unified Data Model" summary="Summary" />
-              </Row>
-            </Col>
-            <h2 class="display-2">Open Source</h2>
+            <LeftAlignedResumeItem title="Redesign" summary="" />
+            <RightAlignedResumeItem title="Purchasing and Login" summary="" />
+            <LeftAlignedResumeItem title="Architecture Discovery" summary="" />
+            <RightAlignedResumeItem title="Server-Driven UI with Jetpack Compose and Swift UI" summary="" />
+            <LeftAlignedResumeItem title="Graph QL and Unified Data Model" summary="test" />
+          </Col>
+        </Row>
+        <h2 class="display-2">Open Source</h2>
+        <Row>
+          <Col>
             <Row>
-              <Col>
-                <CardDeck>
-                  <OpenSourceCard header="Android" title="Leap for WaniKani" summary="Leap for WaniKani Summary" />
-                  <OpenSourceCard header="Web" title="Resume Website" summary="Resume Website Summary" />
-                  <OpenSourceCard header="Android" title="Adapter Delegate Cards" summary="Adapter Delegate Cards Summary" />
-                  <OpenSourceCard header="Android" title="Twitter Username RxJava" summary="Twitter Username RxJava Summary" />
-                </CardDeck>
-              </Col>
+              <CardDeck>
+                <OpenSourceCard title="Leap for WaniKani" summary="Leap for WaniKani Summary" />
+                <OpenSourceCard header="Web" title="Resume Website" summary="Resume Website Summary" />
+                <OpenSourceCard header="Android" title="Adapter Delegate Cards" summary="Adapter Delegate Cards Summary" />
+                <OpenSourceCard header="Android" title="Twitter Username RxJava" summary="Twitter Username RxJava Summary" />
+              </CardDeck>
             </Row>
           </Col>
         </Row>
