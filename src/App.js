@@ -12,14 +12,14 @@ import Divider from './components/Divider';
 function App() {
   return (
     <div>
-      <TopNavBar resumeUrl="https://docs.google.com/document/d/1sODXvbf0u687PYut1KaJKPpaLDFIYJjszgkopTOiOMU/edit?usp=sharing" />
+      <TopNavBar resumeUrl={Strings.URL_RESUME} />
       <Container>
         <Row>
           <Col md={{ span: 8, offset: 0 }}>
             <LandingPage title={Strings.NAME} summary={Strings.ABOUT} />
           </Col>
         </Row>
-  <h2 class="display-2" id="wsj">{Strings.HEADER_WSJ}</h2>
+        <h2 class="display-2" id="wsj">{Strings.WSJ}</h2>
         <Row>
           <Col className="justify-content-around">
             <LeftAlignedResumeItem title={Strings.RESUME_TITLE} subtitle={Strings.RESUME_SUMMARY} summary={Strings.RESUME_SUMMARY} src="/panel-redesign.png" />
@@ -33,14 +33,14 @@ function App() {
             <LeftAlignedResumeItem title={Strings.GRAPH_TITLE} subtitle={Strings.GRAPH_SUBTITLE} summary={Strings.GRAPH_SUMMARY} src="/panel-ar-ad.png" />
           </Col>
         </Row>
-        <h2 class="display-2" id="opensource">{Strings.HEADER_OPEN_SOURCE}</h2>
+        <h2 class="display-2" id="opensource">{Strings.OPEN_SOURCE}</h2>
         <Row>
           <Col>
             <CardDeck>
-              <OpenSourceCard header={Strings.HEADER_ANDROID} title={Strings.LFWK_NAME} summary={Strings.LFWK_SUMMARY} gitHubUrl={Strings.URL_GITHUB_LFWK} playStoreUrl={Strings.URL_PLAY_LFWK} />
-              <OpenSourceCard header={Strings.HEADER_WEB}  title={Strings.RESUME_TITLE} summary={Strings.RESUME_SUMMARY} gitHubUrl={Strings.URL_GITHUB_RESUME} />
-              <OpenSourceCard header={Strings.HEADER_ANDROID}  title={Strings.ADAPTER_TITLE} summary={Strings.ADAPTER_SUMMARY} gitHubUrl={Strings.URL_GITHUB_ADAPTER} />
-              <OpenSourceCard header={Strings.HEADER_ANDROID} title={Strings.TWITTER_TITLE} summary={Strings.TWITTER_SUMMARY} gitHubUrl={Strings.URL_GITHUB_TWITTER} />
+              <OpenSourceCard header={Strings.ANDROID} title={Strings.LFWK_NAME} summary={Strings.LFWK_SUMMARY} gitHubUrl={Strings.URL_GITHUB_LFWK} playStoreUrl={Strings.URL_PLAY_LFWK} />
+              <OpenSourceCard header={Strings.WEB} title={Strings.RESUME_TITLE} summary={Strings.RESUME_SUMMARY} gitHubUrl={Strings.URL_GITHUB_RESUME} />
+              <OpenSourceCard header={Strings.ANDROID} title={Strings.ADAPTER_TITLE} summary={Strings.ADAPTER_SUMMARY} gitHubUrl={Strings.URL_GITHUB_ADAPTER} />
+              <OpenSourceCard header={Strings.ANDROID} title={Strings.TWITTER_TITLE} summary={Strings.TWITTER_SUMMARY} gitHubUrl={Strings.URL_GITHUB_TWITTER} />
             </CardDeck>
           </Col>
         </Row>

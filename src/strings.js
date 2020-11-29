@@ -1,11 +1,12 @@
 module.exports = {
     NAME : "Vince Rickey",
     ABOUT : "Software Engineer with five years of experience in Android. Learning Web and iOS.",
-    HEADER_WSJ : "WSJ",
-    HEADER_OPEN_SOURCE : "Open Source",
-    HEADER_ANDROID : "Android",
-    HEADER_WEB : "Web",
-    HEADER_IOS : "iOS",
+    WSJ : "WSJ",
+    OPEN_SOURCE : "Open Source",
+    ANDROID : "Android",
+    WEB : "Web",
+    IOS : "iOS",
+    RESUME : "Resume",
     REDESIGN_TITLE : "Redesign",
     REDESIGN_SUBTITLE: "Design System and Editorial Tools",
     REDESIGN_SUMMARY : "Resume Summary",
@@ -36,5 +37,6 @@ module.exports = {
     URL_GITHUB_ADAPTER : "https://github.com/vrickey123/AdapterDelegateCards",
     URL_GITHUB_TWITTER : "https://github.com/vrickey123/TwitterUsername",
     URL_LINKEDIN : "https://www.linkedin.com/in/vincentrickey",
+    URL_RESUME : "https://docs.google.com/document/d/1sODXvbf0u687PYut1KaJKPpaLDFIYJjszgkopTOiOMU/edit?usp=sharing",
     CONTACT : "Contact"
 }
