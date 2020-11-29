@@ -35,7 +35,7 @@ function App() {
           <Col>
             <Row>
               <CardDeck>
-                <OpenSourceCard title="Leap for WaniKani" summary="Leap for WaniKani Summary" />
+                <OpenSourceCard header="Android" title="Leap for WaniKani" summary="Leap for WaniKani Summary" hasPlayStoreLink="true"/>
                 <OpenSourceCard header="Web" title="Resume Website" summary="Resume Website Summary" />
                 <OpenSourceCard header="Android" title="Adapter Delegate Cards" summary="Adapter Delegate Cards Summary" />
                 <OpenSourceCard header="Android" title="Twitter Username RxJava" summary="Twitter Username RxJava Summary" />
