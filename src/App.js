@@ -8,6 +8,11 @@ import LeftAlignedResumeItem from './components/LeftAlignedResumeItem';
 import RightAlignedResumeItem from './components/RightAlignedResumeItem';
 import Footer from './components/Footer';
 import Divider from './components/Divider';
+import imgAndroidP from './assets/panel-android-p.png';
+import imgArAd from './assets/panel-ar-ad.png';
+import imgLogin from './assets/panel-login.png';
+import imgPerformance from './assets/panel-performance.png';
+import imgRedesign from './assets/panel-redesign.png';
 
 function App() {
   return (
@@ -22,15 +27,15 @@ function App() {
         <h2 class="display-2" id="wsj">{Strings.WSJ}</h2>
         <Row>
           <Col className="justify-content-around">
-            <LeftAlignedResumeItem title={Strings.RESUME_TITLE} subtitle={Strings.RESUME_SUMMARY} summary={Strings.RESUME_SUMMARY} src="/panel-redesign.png" />
+            <LeftAlignedResumeItem title={Strings.REDESIGN_TITLE} subtitle={Strings.REDESIGN_SUBTITLE} summary={Strings.REDESIGN_SUMMARY} img={imgRedesign} />
             <Divider height="2.5px" />
-            <RightAlignedResumeItem title={Strings.PURCHASING_TITLE} subtitle={Strings.PURCHASING_SUBTITLE} summary={Strings.REDESIGN_SUMMARY} src="/panel-login.png" />
+            <RightAlignedResumeItem title={Strings.PURCHASING_TITLE} subtitle={Strings.PURCHASING_SUBTITLE} summary={Strings.PURCHASING_SUMMARY} img={imgLogin}/>
             <Divider height="2.5px" />
-            <LeftAlignedResumeItem title={Strings.ARCH_TITLE} subtitle={Strings.ARCH_SUBTITLE} summary={Strings.ARCH_SUMMARY} src="/panel-performance.png" />
+            <LeftAlignedResumeItem title={Strings.ARCH_TITLE} subtitle={Strings.ARCH_SUBTITLE} summary={Strings.ARCH_SUMMARY} img={imgPerformance}/>
             <Divider height="2.5px" />
-            <RightAlignedResumeItem title={Strings.UI_TITLE} subtitle={Strings.UI_SUBTITLE} summary={Strings.UI_SUMMARY} src="/panel-android-p.png" />
+            <RightAlignedResumeItem title={Strings.UI_TITLE} subtitle={Strings.UI_SUBTITLE} summary={Strings.UI_SUMMARY} img={imgAndroidP} />
             <Divider height="2.5px" />
-            <LeftAlignedResumeItem title={Strings.GRAPH_TITLE} subtitle={Strings.GRAPH_SUBTITLE} summary={Strings.GRAPH_SUMMARY} src="/panel-ar-ad.png" />
+            <LeftAlignedResumeItem title={Strings.GRAPH_TITLE} subtitle={Strings.GRAPH_SUBTITLE} summary={Strings.GRAPH_SUMMARY} img={imgArAd} />
           </Col>
         </Row>
         <h2 class="display-2" id="opensource">{Strings.OPEN_SOURCE}</h2>

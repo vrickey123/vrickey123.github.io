@@ -3,7 +3,7 @@ import { Row, Col, Image } from 'react-bootstrap'
 const LeftAlignedResumeItem = (props) => (
     <Row className="justify-content-center mb-5 mt-5">
         <Col>
-            <Image style={{width:"500px"}} src={props.src} />
+            <Image style={{width:"500px"}} src={props.img} />
         </Col>
         <Col>
             <h1>{props.title}</h1>

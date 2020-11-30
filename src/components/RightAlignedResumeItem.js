@@ -8,7 +8,7 @@ const RightAlignedResumeItem = (props) => (
             <p>{props.summary}</p>
         </Col>
         <Col>
-            <Image style={{width:"500px"}} src={props.src} />
+            <Image style={{width:"500px"}} src={props.img} />
         </Col>
     </Row>
 );
