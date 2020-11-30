@@ -28,8 +28,8 @@ const CardBodyGithubAndGoogleButtons = (props) => (
     <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.summary}</Card.Text>
-        <Button variant="primary" className="mr-1" href={props.gitHubUrl}>GitHub</Button>
-        <Button variant="secondary" className="ml-1" href={props.playStoreUrl}>Google Play</Button>
+        <Button variant="primary" className="mr-xl-1" href={props.gitHubUrl}>GitHub</Button>
+        <Button variant="secondary" className="ml-1 ml-sm-0 mt-sm-1 ml-xl-1 mt-xl-0" href={props.playStoreUrl}>Google Play</Button>
     </Card.Body>
 );
 
