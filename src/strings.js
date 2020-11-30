@@ -1,6 +1,6 @@
 module.exports = {
     NAME : "Vince Rickey",
-    ABOUT : "Software Engineer with five years of experience in Android. Learning Web and iOS.",
+    ABOUT : "Software Engineer with five years of experience in Android. Learning Web and iOS. Currently @WSJ",
     WSJ : "WSJ",
     OPEN_SOURCE : "Open Source",
     ANDROID : "Android",
@@ -12,7 +12,7 @@ module.exports = {
     REDESIGN_SUMMARY : "In 2016/2017, I worked with the Design team on a complete redesign of the app where we implemented new cards, articles, fonts, colors, and bottom navigation. This redesign was connected to internal editorial tools that allow editors to curate the types of cards in the feed and configure the visibility, color, and other attributes of each view that makes up a card. As a result, there are thousands of possible card variants from a handful of card types. Today we are integrating Design Tokens and a new Component Design System across Web, iOS, and Android. With Web and Design, I implemented Amazon's Style Dictionary to manage our Design Tokens (the color, font, spacing, and typography values). Now we have a single source of truth that defines WSJ Black #222222 that's used by Web, iOS, and Android.",
     PURCHASING_TITLE : "Purchasing and Login",
     PURCHASING_SUBTITLE: "Auth0 and Google Play Billing",
-    PURCHASING_SUMMARY : "There are many ways to subscribe to WSJ - through Google Play, the Apple App Store, web, phone, etc. - which leads to a very complex login and entitlement system. In 2018/2019, I was the Mobile lead on a Single Sign On project that tied subscriptions through the Google, Amazon, and Samsung with our other entry points; the goal being able to purchase and sign on from any device on any platform with your subscription. The technical details included setting up purchasing and receipt verification for all three Android stores as well as an Auth0-backed login and entitlement system.",
+    PURCHASING_SUMMARY : "There are many ways to subscribe to WSJ - through Google Play, the Apple App Store, web, phone, etc. - which leads to a very complex login and entitlement system. In 2018/2019, I was the Mobile lead on a Single Sign On project that tied subscriptions through the Google Play and Amazon App Stores our other entry points; the goal being able to purchase and sign on from any device on any platform with your subscription. The technical details included setting up purchasing and receipt verification for all both Android stores as well as an Auth0-backed login and entitlement system.",
     ARCH_TITLE : "Architecture Discovery",
     ARCH_SUBTITLE: "MVP, MVVM, MVI",
     ARCH_SUMMARY : "The WSJ Android app is nearly 10 years old and that naturally means there is some tech debt to take care of after a few generations of teams. In 2019/2020, we started an architecture discovery process to reevaluate our data and UI flow from the ground up. The team voted on MVI and our management agreed split the team in half to work on the update. I am currently on the Site Reliability Team working on the incremental refactor to MVI as well as the other initiatives described below.",
