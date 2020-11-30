@@ -8,11 +8,11 @@ import LeftAlignedResumeItem from './components/LeftAlignedResumeItem';
 import RightAlignedResumeItem from './components/RightAlignedResumeItem';
 import Footer from './components/Footer';
 import Divider from './components/Divider';
-import imgAndroidP from './assets/panel-android-p.png';
-import imgArAd from './assets/panel-ar-ad.png';
+import imgMvi from './assets/panel-mvi.png';
 import imgLogin from './assets/panel-login.png';
 import imgPerformance from './assets/panel-performance.png';
 import imgRedesign from './assets/panel-redesign.png';
+import imgCompose from './assets/panel-compose.png'
 
 function App() {
   return (
@@ -31,11 +31,11 @@ function App() {
             <Divider height="2.5px" />
             <RightAlignedResumeItem title={Strings.PURCHASING_TITLE} subtitle={Strings.PURCHASING_SUBTITLE} summary={Strings.PURCHASING_SUMMARY} img={imgLogin}/>
             <Divider height="2.5px" />
-            <LeftAlignedResumeItem title={Strings.ARCH_TITLE} subtitle={Strings.ARCH_SUBTITLE} summary={Strings.ARCH_SUMMARY} img={imgPerformance}/>
+            <LeftAlignedResumeItem title={Strings.ARCH_TITLE} subtitle={Strings.ARCH_SUBTITLE} summary={Strings.ARCH_SUMMARY} img={imgMvi}/>
             <Divider height="2.5px" />
-            <RightAlignedResumeItem title={Strings.UI_TITLE} subtitle={Strings.UI_SUBTITLE} summary={Strings.UI_SUMMARY} img={imgAndroidP} />
+            <RightAlignedResumeItem title={Strings.UI_TITLE} subtitle={Strings.UI_SUBTITLE} summary={Strings.UI_SUMMARY} img={imgCompose} />
             <Divider height="2.5px" />
-            <LeftAlignedResumeItem title={Strings.GRAPH_TITLE} subtitle={Strings.GRAPH_SUBTITLE} summary={Strings.GRAPH_SUMMARY} img={imgArAd} />
+            <LeftAlignedResumeItem title={Strings.GRAPH_TITLE} subtitle={Strings.GRAPH_SUBTITLE} summary={Strings.GRAPH_SUMMARY} img={imgPerformance} />
           </Col>
         </Row>
         <h2 class="display-2" id="opensource">{Strings.OPEN_SOURCE}</h2>
