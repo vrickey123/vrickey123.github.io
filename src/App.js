@@ -41,9 +41,12 @@ function App() {
         <h2 class="display-2" id="opensource">{Strings.OPEN_SOURCE}</h2>
         <CardDeck>
           <OpenSourceCard header={Strings.ANDROID} title={Strings.LFWK_NAME} summary={Strings.LFWK_SUMMARY} gitHubUrl={Strings.URL_GITHUB_LFWK} playStoreUrl={Strings.URL_PLAY_LFWK} />
-          <OpenSourceCard header={Strings.WEB} title={Strings.RESUME_TITLE} summary={Strings.RESUME_SUMMARY} gitHubUrl={Strings.URL_GITHUB_RESUME} />
+          <OpenSourceCard header={Strings.ANDROID} title={Strings.COMPOSE_TITLE} summary={Strings.COMPOSE_SUMMARY} gitHubUrl={Strings.URL_GITHUB_COMPOSE} />
           <OpenSourceCard header={Strings.ANDROID} title={Strings.ADAPTER_TITLE} summary={Strings.ADAPTER_SUMMARY} gitHubUrl={Strings.URL_GITHUB_ADAPTER} />
           <OpenSourceCard header={Strings.ANDROID} title={Strings.TWITTER_TITLE} summary={Strings.TWITTER_SUMMARY} gitHubUrl={Strings.URL_GITHUB_TWITTER} />
+        </CardDeck>
+        <CardDeck>
+          <OpenSourceCard header={Strings.WEB} title={Strings.RESUME_TITLE} summary={Strings.RESUME_SUMMARY} gitHubUrl={Strings.URL_GITHUB_RESUME} />
         </CardDeck>
       </Container>
       <Footer title={Strings.CONTACT} gitHubUrl={Strings.URL_GITHUB} linkedInUrl={Strings.URL_LINKEDIN} />

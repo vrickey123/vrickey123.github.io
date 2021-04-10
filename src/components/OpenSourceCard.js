@@ -17,19 +17,19 @@ function OpenSourceCard(props) {
 }
 
 const CardBodyGithubButton = (props) => (
-    <Card.Body>
+    <Card.Body className="d-flex flex-column">
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.summary}</Card.Text>
-        <Button variant="primary" href={props.gitHubUrl}>GitHub</Button>
+        <Button className="mt-auto" variant="primary" href={props.gitHubUrl}>GitHub</Button>
     </Card.Body>
 );
 
 const CardBodyGithubAndGoogleButtons = (props) => (
-    <Card.Body>
+    <Card.Body className="d-flex flex-column">
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.summary}</Card.Text>
-        <Button variant="primary" className="mr-xl-1" href={props.gitHubUrl}>GitHub</Button>
-        <Button variant="secondary" className="ml-1 ml-sm-0 mt-sm-1 ml-xl-1 mt-xl-0" href={props.playStoreUrl}>Google Play</Button>
+        <Button variant="secondary" className="mt-auto" href={props.playStoreUrl}>Google Play</Button>
+        <Button variant="primary" className="mt-3" href={props.gitHubUrl}>GitHub</Button>
     </Card.Body>
 );
 
