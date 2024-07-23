@@ -4,7 +4,7 @@ import { Row, Col, Image } from 'react-bootstrap'
     Otherwise use half-width md=6.
     Add margin top to xs and s.    
 */}
-const LeftAlignedResumeItem = (props) => (
+const LeftAlignedImageContentRow = (props) => (
     <Row className="mb-5 mt-5">
         <Col xs={12} md={6}>
             <Image fluid src={props.img} />
@@ -17,4 +17,4 @@ const LeftAlignedResumeItem = (props) => (
     </Row>
 );
 
-export default LeftAlignedResumeItem;
+export default LeftAlignedImageContentRow;

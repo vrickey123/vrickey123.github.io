@@ -4,8 +4,8 @@ import './App.css';
 import Strings from './strings';
 import OpenSourceCard from './components/OpenSourceCard'
 import LandingPage from './components/LandingPage'
-import LeftAlignedResumeItem from './components/LeftAlignedResumeItem';
-import RightAlignedResumeItem from './components/RightAlignedResumeItem';
+import LeftAlignedResumeItem from './components/LeftAlignedImageContentRow';
+import RightAlignedResumeItem from './components/RightAlignedImageContentRow';
 import Footer from './components/Footer';
 import Divider from './components/Divider';
 import imgMvi from './assets/panel-mvi.png';
