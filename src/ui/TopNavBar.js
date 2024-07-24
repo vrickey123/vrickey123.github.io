@@ -1,5 +1,5 @@
 import { Navbar, Nav, NavLink } from 'react-bootstrap';
-import strings from '../strings';
+import strings from '../res/strings';
 
 const TopNavBar = (props) => (
     <Navbar bg="dark" variant="dark">
