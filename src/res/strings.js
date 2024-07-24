@@ -10,7 +10,8 @@ module.exports = {
     RESUME : "Resume",
     KEY_RESULTS_TITLE : "Key Results",
     KEY_RESULTS_SUBTITLE : "Engineering solutions at scale",
-    KEY_RESULT_GOOGLE_PLAY : "#2 News App in the Google Play Store with 1+ million downloads.",
+    KEY_RESULT_PLAY_ANCHOR : "#2 News App in the Google Play Store",
+    KEY_RESULT_PLAY_TEXT : " with 1+ million downloads.",
     KEY_RESULT_APP_PLATFORM : "Replaced legacy apps with Compose & GraphQL white-label app platform shared by four Dow Jones apps: Wall Street Journal, Barrons, FN, MarketWatch. #1 contributor with 100,000+ lines.",
     KEY_RESULT_TEAM : "Engineering lead for 20 Android Engineers; 45 Mobile Engineers; global 139-person dept.",
     TABLE_HEADER_NUMBER : "#",
@@ -79,5 +80,6 @@ module.exports = {
     URL_GITHUB_MET : "https://github.com/vrickey123/the-met-impressionist-showcase",
     URL_LINKEDIN : "https://www.linkedin.com/in/vincentrickey",
     URL_RESUME : "https://docs.google.com/document/d/1sODXvbf0u687PYut1KaJKPpaLDFIYJjszgkopTOiOMU/edit?usp=sharing",
+    URL_PLAY_WSJ : "https://play.google.com/store/apps/details?id=wsj.reader_sp",
     CONTACT : "Contact",
 }

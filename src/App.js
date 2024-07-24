@@ -2,6 +2,7 @@ import './App.css';
 import Strings from './res/strings';
 import Dimens from './res/dimens';
 import { Container, Row, Col, CardDeck } from 'react-bootstrap';
+import StretchedLinkedData from './data/StretchedLinkData';
 import TableContent from './data/TableContent';
 import TopNavBar from './ui/TopNavBar'
 import OpenSourceCard from './ui/OpenSourceCard'
@@ -34,7 +35,7 @@ function App() {
               title={Strings.KEY_RESULTS_TITLE}
               subtitle={Strings.KEY_RESULTS_SUBTITLE}
               summary={[
-                Strings.KEY_RESULT_GOOGLE_PLAY,
+                new StretchedLinkedData(Strings.URL_PLAY_WSJ, Strings.KEY_RESULT_PLAY_ANCHOR, Strings.KEY_RESULT_PLAY_TEXT),
                 Strings.KEY_RESULT_APP_PLATFORM,
                 Strings.KEY_RESULT_TEAM
               ]}

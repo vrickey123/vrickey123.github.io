@@ -6,7 +6,7 @@ function TableContentRow(props) {
     props.tableContent.getItems().forEach((item, index) => {
         tableRows.push(
             <tr key={index}>
-                <td>{index+1}</td>
+                <td>{index + 1}</td>
                 <td>{item.getDomain()}</td>
                 <td>{item.getTechnical()}</td>
                 <td>{item.getImpact()}</td>
@@ -19,7 +19,7 @@ function TableContentRow(props) {
             <Col>
                 <h1>{props.title}</h1>
                 <h2 className="text-muted">{props.subtitle}</h2>
-                <p>{props.summary[0]}</p>
+                <p><a href={props.summary[0].getLink()}>{props.summary[0].getAnchor()}</a>{props.summary[0].getText()}</p>
                 <p>{props.summary[1]}</p>
                 <p>{props.summary[2]}</p>
                 <Table striped bordered hover responsive>
