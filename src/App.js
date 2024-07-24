@@ -1,7 +1,7 @@
 import './App.css';
 import Strings from './res/strings';
 import Dimens from './res/dimens';
-import { Container, Row, Col, CardDeck } from 'react-bootstrap';
+import { Container, Row, Col, CardDeck, ListGroup, ListGroupItem } from 'react-bootstrap';
 import StretchedLinkedData from './data/StretchedLinkData';
 import TableContent from './data/TableContent';
 import TopNavBar from './ui/TopNavBar'
@@ -47,28 +47,28 @@ function App() {
               subtitle={Strings.REDESIGN_SUBTITLE}
               summary={Strings.REDESIGN_SUMMARY}
               img={imgRedesign} />
-            <Divider 
+            <Divider
               height={Dimens.DIVIDER_HEIGHT} />
             <RightAlignedImageContentRow
               title={Strings.PURCHASING_TITLE}
               subtitle={Strings.PURCHASING_SUBTITLE}
               summary={Strings.PURCHASING_SUMMARY}
               img={imgLogin} />
-            <Divider 
+            <Divider
               height={Dimens.DIVIDER_HEIGHT} />
             <LeftAlignedImageContentRow
               title={Strings.ARCH_TITLE}
               subtitle={Strings.ARCH_SUBTITLE}
               summary={Strings.ARCH_SUMMARY}
               img={imgMvi} />
-            <Divider 
+            <Divider
               height={Dimens.DIVIDER_HEIGHT} />
             <RightAlignedImageContentRow
               title={Strings.UI_TITLE}
               subtitle={Strings.UI_SUBTITLE}
               summary={Strings.UI_SUMMARY}
               img={imgCompose} />
-            <Divider 
+            <Divider
               height={Dimens.DIVIDER_HEIGHT} />
             <LeftAlignedImageContentRow
               title={Strings.GRAPH_TITLE}
@@ -96,7 +96,7 @@ function App() {
             gitHubUrl={Strings.URL_GITHUB_RESUME} />
         </CardDeck>
         <CardDeck>
-        <OpenSourceCard
+          <OpenSourceCard
             header={Strings.ANDROID_KOTLIN}
             title={Strings.LFWK_NAME}
             summary={Strings.LFWK_SUMMARY}
@@ -113,6 +113,15 @@ function App() {
             summary={Strings.TWITTER_SUMMARY}
             gitHubUrl={Strings.URL_GITHUB_TWITTER} />
         </CardDeck>
+        <h2 class="display-2" id="languages">{Strings.LANGUAGES_TITLE}</h2>
+        <Row className="mt-5 mb-5">
+          <Col className="justify-content-around">
+            <h1>{Strings.LANGUAGES_KOTLIN}</h1>
+            <h2>{Strings.LANGUAGES_JAVA}</h2>
+            <h3>{Strings.LANGUAGES_DART}</h3>
+            <h4>{Strings.LANGUAGES_JAVASCRIPT}</h4>
+          </Col>
+        </Row>
       </Container>
       <Footer
         title={Strings.CONTACT}
