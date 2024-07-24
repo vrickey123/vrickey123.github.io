@@ -1,18 +1,21 @@
-import { Navbar, Nav, NavLink } from 'react-bootstrap';
+import { Navbar, Nav, NavLink, Container } from 'react-bootstrap';
 import Strings from '../res/strings';
 
 const TopNavBar = (props) => (
-    <Navbar bg="dark" variant="dark">
+  <Navbar expand="lg" bg="dark" variant="dark">
+    <Container>
       <Navbar.Brand href="#vincerickey">{Strings.NAME}</Navbar.Brand>
-      <Nav classname="sections">
-        <NavLink href="#wsj">{Strings.WSJ}</NavLink>
-        <NavLink href="#opensource">{Strings.OPEN_SOURCE}</NavLink>
-        <NavLink href="#languages">{Strings.LANGUAGES_TITLE}</NavLink>
-      </Nav>
-      <Nav>
-        <NavLink href={props.resumeUrl}>{Strings.RESUME}</NavLink>
-      </Nav>
-    </Navbar>
-  );
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+          <NavLink href="#wsj">{Strings.WSJ}</NavLink>
+          <NavLink href="#opensource">{Strings.OPEN_SOURCE}</NavLink>
+          <NavLink href="#languages">{Strings.LANGUAGES_TITLE}</NavLink>
+          <NavLink href={props.resumeUrl}>{Strings.RESUME}</NavLink>
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
+);
 
-  export default TopNavBar;
+export default TopNavBar;
