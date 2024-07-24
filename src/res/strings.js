@@ -78,7 +78,7 @@ module.exports = {
     URL_GITHUB_TWITTER : "https://github.com/vrickey123/TwitterUsername",
     URL_GITHUB_MET : "https://github.com/vrickey123/the-met-impressionist-showcase",
     URL_LINKEDIN : "https://www.linkedin.com/in/vincentrickey",
-    URL_RESUME : "https://docs.google.com/document/d/1sODXvbf0u687PYut1KaJKPpaLDFIYJjszgkopTOiOMU/edit?usp=sharing",
+    URL_RESUME : "https://docs.google.com/document/d/1R5T5EphiB8QYKr0xiSzcr2n7re40doICJC2nnIhL3g4/edit?usp=sharing",
     URL_PLAY_WSJ : "https://play.google.com/store/apps/details?id=wsj.reader_sp",
     CONTACT : "Contact",
 }
