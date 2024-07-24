@@ -13,7 +13,7 @@ module.exports = {
     KEY_RESULT_PLAY_ANCHOR : "#2 News App in the Google Play Store",
     KEY_RESULT_PLAY_TEXT : " with 1+ million downloads",
     KEY_RESULT_APP_PLATFORM : "Replaced legacy apps with Compose & GraphQL white-label app platform shared by four Dow Jones apps: Wall Street Journal, Barrons, FN, MarketWatch. #1 contributor with 100,000+ lines.",
-    KEY_RESULT_TEAM : "Engineering lead for 20 Android Engineers; 45 Mobile Engineers; global 139-person dept.",
+    KEY_RESULT_TEAM : "Engineering lead for 20 Android Engineers; 45 Mobile Engineers; global 139-person department.",
     TABLE_HEADER_NUMBER : "#",
     TABLE_HEADER_DOMAIN : "Domain",
     TABLE_HEADER_TECHNICAL : "Technical Acheivement",
