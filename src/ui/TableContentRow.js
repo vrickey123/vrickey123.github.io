@@ -6,7 +6,6 @@ function TableContentRow(props) {
     props.tableContent.getItems().forEach((item, index) => {
         tableRows.push(
             <tr key={index}>
-                <td>{index + 1}</td>
                 <td>{item.getDomain()}</td>
                 <td>{item.getTechnical()}</td>
                 <td>{item.getImpact()}</td>
@@ -25,7 +24,6 @@ function TableContentRow(props) {
                 <Table striped bordered hover responsive>
                     <thead>
                         <tr>
-                            <th>#</th>
                             <th>{props.tableContent.getHeader().getDomain()}</th>
                             <th>{props.tableContent.getHeader().getTechnical()}</th>
                             <th>{props.tableContent.getHeader().getImpact()}</th>
