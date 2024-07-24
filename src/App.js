@@ -1,7 +1,7 @@
 import './App.css';
 import Strings from './res/strings';
 import Dimens from './res/dimens';
-import { Container, Row, Col, CardDeck, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Container, Row, Col, CardDeck } from 'react-bootstrap';
 import StretchedLinkedData from './data/StretchedLinkData';
 import TableContent from './data/TableContent';
 import TopNavBar from './ui/TopNavBar'

@@ -1,9 +1,8 @@
 import { Row, Col, Image } from 'react-bootstrap'
 
-{/* Stack the columns on mobile by making xs full-width. 
-    Otherwise use half-width md=6.
-    Add margin top to xs and s.    
-*/}
+// Stack the columns on mobile by making xs full-width. 
+// Otherwise use half-width md=6.
+// Add margin top to xs and s.
 const RightAlignedImageContentRow = (props) => (
     <Row className="mb-5 mt-5">
         <Col xs={12} md={6}>
