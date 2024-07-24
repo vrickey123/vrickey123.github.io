@@ -18,7 +18,7 @@ function TableContentRow(props) {
             <Col>
                 <h1>{props.title}</h1>
                 <h2 className="text-muted">{props.subtitle}</h2>
-                <p><a href={props.summary[0].getLink()}>{props.summary[0].getAnchor()}</a>{props.summary[0].getText()}</p>
+                <p class="lead"><a href={props.summary[0].getLink()}>{props.summary[0].getAnchor()}</a>{props.summary[0].getText()}</p> 
                 <p>{props.summary[1]}</p>
                 <p>{props.summary[2]}</p>
                 <Table striped bordered hover responsive>
