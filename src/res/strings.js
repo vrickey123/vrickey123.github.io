@@ -72,7 +72,6 @@ module.exports = {
     MET_SUMMARY : "Multi-module Jetpack Compose app showcasing The Met's impressionist collection. My best architecture sample. (2022 Profolio Project)",
     URL_GITHUB : "https://github.com/vrickey123",
     URL_GITHUB_LFWK : "https://github.com/vrickey123/LeapForWaniKani",
-    URL_PLAY_LFWK : "https://play.google.com/store/apps/details?id=com.leapsoftware.leapforwanikani&hl=en_US",
     URL_GITHUB_RESUME : "https://github.com/vrickey123/vrickey123.github.io",
     URL_GITHUB_COMPOSE : "https://github.com/vrickey123/JetpackComposeCards",
     URL_GITHUB_ADAPTER : "https://github.com/vrickey123/AdapterDelegateCards",

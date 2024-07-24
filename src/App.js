@@ -86,10 +86,9 @@ function App() {
             gitHubUrl={Strings.URL_GITHUB_MET} />
           <OpenSourceCard
             header={Strings.ANDROID_KOTLIN}
-            title={Strings.LFWK_NAME}
-            summary={Strings.LFWK_SUMMARY}
-            gitHubUrl={Strings.URL_GITHUB_LFWK}
-            playStoreUrl={Strings.URL_PLAY_LFWK} />
+            title={Strings.COMPOSE_TITLE}
+            summary={Strings.COMPOSE_SUMMARY}
+            gitHubUrl={Strings.URL_GITHUB_COMPOSE} />
           <OpenSourceCard
             header={Strings.WEB}
             title={Strings.RESUME_TITLE}
@@ -97,11 +96,12 @@ function App() {
             gitHubUrl={Strings.URL_GITHUB_RESUME} />
         </CardDeck>
         <CardDeck>
-          <OpenSourceCard
+        <OpenSourceCard
             header={Strings.ANDROID_KOTLIN}
-            title={Strings.COMPOSE_TITLE}
-            summary={Strings.COMPOSE_SUMMARY}
-            gitHubUrl={Strings.URL_GITHUB_COMPOSE} />
+            title={Strings.LFWK_NAME}
+            summary={Strings.LFWK_SUMMARY}
+            gitHubUrl={Strings.URL_GITHUB_LFWK}
+            playStoreUrl={Strings.URL_PLAY_LFWK} />
           <OpenSourceCard
             header={Strings.ANDROID_JAVA}
             title={Strings.ADAPTER_TITLE}
