@@ -100,6 +100,8 @@ module.exports = {
     LANGUAGES_JAVA : "Java | 75,000 lines",
     LANGUAGES_DART : "Dart | 20,000 lines",
     LANGUAGES_JAVASCRIPT : "JavaScript / HTML / CSS | 15,000 lines",
+    TOOLS_TITLE : "Tools",
+    TOOLS : "Activity, Fragment, ViewModel, JetPack Compose, MVVM, MVI, Clean Architecture, Reactive UI, Material Design, Coroutines, Flow, LiveData, RxJava, RESTful API, Apollo GraphQL, Git, RecyclerView, SQLite database, Room, Hilt, Dagger, Dependency injection, Auth0, OAuth, Google Play Billing, Figma, Design Tokens, CI/CD, Test Pyramid, Unit Test, Integration Test, UI Test, Mockk, Chrome Custom Tab, WebKit, Release Management, Trunk-based development, Technical Writing, Agile Scrum, Kanban, Waterfall, Dev Ops.",
     URL_GITHUB : "https://github.com/vrickey123",
     URL_GITHUB_LFWK : "https://github.com/vrickey123/LeapForWaniKani",
     URL_GITHUB_RESUME : "https://github.com/vrickey123/vrickey123.github.io",
