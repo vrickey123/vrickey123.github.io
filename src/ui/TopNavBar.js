@@ -12,6 +12,7 @@ const TopNavBar = (props) => (
           <NavLink href="#wsj">{Strings.WSJ}</NavLink>
           <NavLink href="#opensource">{Strings.OPEN_SOURCE}</NavLink>
           <NavLink href="#languages">{Strings.LANGUAGES_TITLE}</NavLink>
+          <NavLink href="#playbook">{Strings.PLAYBOOK_TITLE}</NavLink>
           <NavLink href={props.resumeUrl}>{Strings.RESUME}</NavLink>
         </Nav>
       </Navbar.Collapse>
