@@ -57,7 +57,7 @@ module.exports = {
     ROLES_STAFF_DATE : "Jan 2023 - Present",
     ROLES_STAFF_APP_PLATFORM : "Replaced legacy apps with Compose & GraphQL white-label app platform shared by four Dow Jones apps: Wall Street Journal, Barrons, FN, MarketWatch. #1 contributor with 100,000+ lines.",
     ROLES_STAFF_TEAM : "Engineering lead for 50 Android Engineers and global 150-person department.",
-    ROLES_STAFF_WEBSHOP : "Replaced a native app subscription system with a hybrid native-web app WebShop that included dynamic offers, flexible paywalls, web-based deployment of iOS & Android mobile app subscription experiences.",
+    ROLES_STAFF_WEBSHOP : "Replaced native app subscription flow with hybrid WebShop that included dynamic offers, flexible paywalls, web-based deployment of iOS & Android mobile app subscription experiences.",
     ROLES_LEAD : "Lead Software Engineer",
     ROLES_LEAD_DATE : "Feb 2021 - Jan 2023",
     ROLES_LEAD_MULTIPLATFORM : "Multiplatform: Flutter proof of concept, Kotlin multiplatform discovery.",
@@ -108,7 +108,7 @@ module.exports = {
     URL_GITHUB_TWITTER : "https://github.com/vrickey123/TwitterUsername",
     URL_GITHUB_MET : "https://github.com/vrickey123/the-met-impressionist-showcase",
     URL_LINKEDIN : "https://www.linkedin.com/in/vincentrickey",
-    URL_RESUME : "https://docs.google.com/document/d/1R5T5EphiB8QYKr0xiSzcr2n7re40doICJC2nnIhL3g4/edit?usp=sharing",
+    URL_RESUME : "https://docs.google.com/document/d/1x86PaKEOlREAQMPq_DzDlo9WJhVfJUARuttorATB4Bw/edit?usp=sharing",
     URL_PLAY_WSJ : "https://play.google.com/store/apps/details?id=wsj.reader_sp",
     CONTACT : "Contact",
 }
