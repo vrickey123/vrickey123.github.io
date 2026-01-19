@@ -1,12 +1,12 @@
 import './App.css';
 import Strings from './res/strings';
 import Dimens from './res/dimens';
-import { Container, Row, Col, CardDeck } from 'react-bootstrap';
+import { Alert, Container, Row, Col, CardDeck } from 'react-bootstrap';
 import StretchedLinkedData from './data/StretchedLinkData';
 import TableContent from './data/TableContent';
-import TopNavBar from './ui/TopNavBar'
-import OpenSourceCard from './ui/OpenSourceCard'
-import LandingPage from './ui/LandingPage'
+import TopNavBar from './ui/TopNavBar';
+import OpenSourceCard from './ui/OpenSourceCard';
+import LandingPage from './ui/LandingPage';
 import LeftAlignedImageContentRow from './ui/LeftAlignedImageContentRow';
 import RightAlignedImageContentRow from './ui/RightAlignedImageContentRow';
 import Footer from './ui/Footer';
@@ -18,6 +18,8 @@ import imgLogin from './assets/panel-login.png';
 import imgPerformance from './assets/panel-performance.png';
 import imgRedesign from './assets/panel-redesign.png';
 import imgCompose from './assets/panel-compose.png'
+import imgPyramid from './assets/img-test-pyramid.png';
+import imgThreeEnv from './assets/img-three-env.png';
 
 function App() {
   return (
@@ -153,12 +155,14 @@ function App() {
         </CardDeck>
         <h2 class="display-2" id="playbook">{Strings.PLAYBOOK_TITLE}</h2>
         <h4 class="display-4 text-muted" >{Strings.PLAYBOOK_SUBTITLE}</h4>
+        <p class="lead">{Strings.PLAYBOOK_DISCOVERY_ART}</p>
         <Row className="mt-5 mb-5">
             <Col className="justify-content-around">
                 <h1 >{Strings.PLAYBOOK_DISCOVERY}</h1>
                 <h2 class="text-muted">{Strings.PLAYBOOK_DISCOVERY_SUBTITLE}</h2>
                 <br></br>
-                <p class="lead">{Strings.PLAYBOOK_DISCOVERY_GOAL}</p>
+                <h3>{Strings.PLAYBOOK_DISCOVERY_GOAL}</h3>
+                <p class="lead">{Strings.PLAYBOOK_DISCOVERY_GOAL_LEAD}</p>
                 <p>{Strings.PLAYBOOK_DISCOVERY_SUMMARY}</p>
                 <h3>{Strings.PLAYBOOK_DISCOVERY_PROCESS}</h3>
                 <ol>
@@ -176,11 +180,13 @@ function App() {
                     <li>{Strings.PLAYBOOK_DISCOVERY_PRODUCT_EXPERIMENT}</li>
                     <li>{Strings.PLAYBOOK_DISCOVERY_PRODUCT_ANALYTICS}</li>
                 </ul>
+                <Alert variant="info">{Strings.PLAYBOOK_DISCOVERY_PRODUCT_WHY}</Alert>
                 <h4 class="text-muted">{Strings.PLAYBOOK_DISCOVERY_DESIGN}</h4>
                 <ul>
                     <li>{Strings.PLAYBOOK_DISCOVERY_DESIGN_UI}</li>
                     <li>{Strings.PLAYBOOK_DISCOVERY_DESIGN_UX}</li>
                 </ul>
+                <Alert variant="info">{Strings.PLAYBOOK_DISCOVERY_DESIGN_WHY}</Alert>
                 <h4 class="text-muted">{Strings.PLAYBOOK_DISCOVERY_ENGINEERING}</h4>
                 <ul>
                     <li>{Strings.PLAYBOOK_DISCOVERY_ENGINEERING_API}</li>
@@ -188,11 +194,13 @@ function App() {
                     <li>{Strings.PLAYBOOK_DISCOVERY_ENGINEERING_SUGGESTED}</li>
                     <li>{Strings.PLAYBOOK_DISCOVERY_ENGINEERING_TWO_PAGER}</li>
                 </ul>
+                 <Alert variant="info">{Strings.PLAYBOOK_DISCOVERY_ENGINEERING_WHY}</Alert>
                 <h4 class="text-muted">{Strings.PLAYBOOK_DISCOVERY_MANAGER}</h4>
                 <ul>
                     <li>{Strings.PLAYBOOK_DISCOVERY_GANNT}</li>
                     <li>{Strings.PLAYBOOK_DISCOVERY_TICKET}</li>
                 </ul>
+                <Alert variant="info">{Strings.PLAYBOOK_DISCOVERY_MANAGER_WHY}</Alert>
                 <h1 >{Strings.PLAYBOOK_THREE_ENV}</h1>
                 <h2 class="text-muted">{Strings.PLAYBOOK_THREE_ENV_SUBTITLE}</h2>
                 <br></br>
