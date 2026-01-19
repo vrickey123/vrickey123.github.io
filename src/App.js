@@ -25,7 +25,22 @@ function App() {
       <Container>
         <Row>
           <Col md={{ span: 8, offset: 0 }}>
-            <LandingPage title={Strings.NAME} summary={Strings.ABOUT} />
+            <LandingPage title={Strings.NAME} summary={Strings.LANDING_SUBTITLE} />
+          </Col>
+        </Row>
+        <h2 class="display-2" id="about">{Strings.ABOUT_TITLE}</h2>
+        <Row className="mt-5 mb-5">
+          <Col className="justify-content-around">
+            <p class="lead">{Strings.ABOUT_DESCRIPTION}</p>
+            <h5>{Strings.ABOUT_INDUSTRY_ITEM}</h5>
+            <ul>
+                <li>{Strings.ABOUT_INDUSTRY_SUBITEM_SCALE}</li>
+                <li>{Strings.ABOUT_INDUSTRY_SUBITEM_TEST}</li>
+                <li>{Strings.ABOUT_INDUSTRY_SUBITEM_ACCESS}</li>
+                <li>{Strings.ABOUT_INDUSTRY_SUBITEM_PERFORMANCE}</li>
+            </ul>
+            <h5>{Strings.ABOUT_INDUSTRY_ITEM_KOTLIN_COMPOSE}</h5>
+            <h5>{Strings.ABOUT_INDUSTRY_ITEM_DIRECTION}</h5>
           </Col>
         </Row>
         <h2 class="display-2" id="wsj">{Strings.WSJ}</h2>
