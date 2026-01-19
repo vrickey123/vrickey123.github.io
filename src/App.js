@@ -151,6 +151,56 @@ function App() {
             summary={Strings.TWITTER_SUMMARY}
             gitHubUrl={Strings.URL_GITHUB_TWITTER} />
         </CardDeck>
+        <h2 class="display-2" id="playbook">{Strings.PLAYBOOK_TITLE}</h2>
+        <h4 class="display-4 text-muted" >{Strings.PLAYBOOK_SUBTITLE}</h4>
+        <Row className="mt-5 mb-5">
+            <Col className="justify-content-around">
+                <h1 >{Strings.PLAYBOOK_DISCOVERY}</h1>
+                <h2 class="text-muted">{Strings.PLAYBOOK_DISCOVERY_SUBTITLE}</h2>
+                <br></br>
+                <p class="lead">{Strings.PLAYBOOK_DISCOVERY_GOAL}</p>
+                <p>{Strings.PLAYBOOK_DISCOVERY_SUMMARY}</p>
+                <h3>{Strings.PLAYBOOK_DISCOVERY_PROCESS}</h3>
+                <ol>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_KICKOFF}</li>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_BREAKOUT}</li>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_REGROUP}</li>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_REPEAT}</li>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_INTAKE}</li>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_ITERATE}</li>
+                </ol>
+                <h3>{Strings.PLAYBOOK_DISCOVERY_OUTCOME}</h3>
+                <h4 class="text-muted">{Strings.PLAYBOOK_DISCOVERY_PRODUCT}</h4>
+                <ul>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_PRODUCT_GOAL}</li>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_PRODUCT_EXPERIMENT}</li>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_PRODUCT_ANALYTICS}</li>
+                </ul>
+                <h4 class="text-muted">{Strings.PLAYBOOK_DISCOVERY_DESIGN}</h4>
+                <ul>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_DESIGN_UI}</li>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_DESIGN_UX}</li>
+                </ul>
+                <h4 class="text-muted">{Strings.PLAYBOOK_DISCOVERY_ENGINEERING}</h4>
+                <ul>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_ENGINEERING_API}</li>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_ENGINEERING_DIAGRAM}</li>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_ENGINEERING_SUGGESTED}</li>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_ENGINEERING_TWO_PAGER}</li>
+                </ul>
+                <h4 class="text-muted">{Strings.PLAYBOOK_DISCOVERY_MANAGER}</h4>
+                <ul>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_GANNT}</li>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_TICKET}</li>
+                </ul>
+                <h1 >{Strings.PLAYBOOK_THREE_ENV}</h1>
+                <h2 class="text-muted">{Strings.PLAYBOOK_THREE_ENV_SUBTITLE}</h2>
+                <br></br>
+                <h1 >{Strings.PLAYBOOK_TEST_PYRAMID}</h1>
+                <h2 class="text-muted">{Strings.PLAYBOOK_TEST_PYRAMID_SUBTITLE}</h2>
+                <br></br>
+            </Col>
+        </Row>
         <h2 class="display-2" id="languages">{Strings.LANGUAGES_TITLE}</h2>
         <Row className="mt-5 mb-5">
           <Col className="justify-content-around">
