@@ -4,7 +4,7 @@ module.exports = {
     ABOUT_TITLE : "About",
     ABOUT_DESCRIPTION : "Android mobile software engineer with experience in Compose, modular app architecture, design systems, mobile payments, authentication, and GraphQL at a scale of millions of users and global engineering teams.",
     ABOUT_INDUSTRY_ITEM : "10+ years of experience in Android applications and mobile engineering in industry setting",
-    ABOUT_INDUSTRY_SUBITEM_SCALE : "Scalable technology and subscription products with bi-weekly release automation, monitoring, A/B feature flag experiments, analytics, and bug resolution",
+    ABOUT_INDUSTRY_SUBITEM_SCALE : "Scalable apps and subscription products with bi-weekly release automation, monitoring, A/B feature flag experiments, analytics, and bug resolution",
     ABOUT_INDUSTRY_SUBITEM_TEST : " Maintainable and testable code bases including API design and test pyramid strategy (unit, integration, UI tests)",
     ABOUT_INDUSTRY_SUBITEM_ACCESS : "Accessible UI/UX in Android and iOS including custom design systems and read-to-me functionality",
     ABOUT_INDUSTRY_SUBITEM_PERFORMANCE : "High Performance multithreaded and memory-optimized native apps and hybrid web apps",
