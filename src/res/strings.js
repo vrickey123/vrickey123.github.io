@@ -67,7 +67,7 @@ module.exports = {
     ROLES_SENIOR_LOGIN_SUB : "Login, Registration, and In-App Subscriptions: shared library for OAuth and Google Billing.",
     ROLES_SOFTWARE : "Software Engineer",
     ROLES_SOFTWARE_DATE : "Nov 2016 - Jan 2019",
-    ROLES_SOFTWARE_REDESIGN : "Redesign & Editorial Tools: newsfeed and card UI layout options curated by internal mac app",
+    ROLES_SOFTWARE_REDESIGN : "Redesign & Editorial Tools: newsfeed and card UI layout options curated by internal mac app.",
     REDESIGN_TITLE : "Redesign",
     REDESIGN_SUBTITLE: "Design System and Editorial Tools",
     REDESIGN_SUMMARY : "In 2017 and 2022, I worked with the Design team on a complete redesign of the app where we implemented new themes, cards, articles, fonts, and navigation. Each redesign worked seamlessly with features in our internal editorial tools - Mac and Web apps - that allow editors to configure both the types of cards in the news feed and the visibility, color, and other attributes to fit the news. For example, an editor can curate a specific story in the news feed by changing its card type from a Thumbnail Card to a Portrait Card, or changing its Flashline to a “breaking red” color, then the apps will dynamically update their UI without an app release. As a result, there are thousands of possible card variants and a rich user experience created from a handful of static card types and components in our Design System. In parallel, we integrated Design Tokens across Web, iOS, Android, and Figma so that there is a single source of truth for our brand color palette, typography, and spacing.",

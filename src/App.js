@@ -158,6 +158,8 @@ function App() {
             <h2>{Strings.LANGUAGES_JAVA}</h2>
             <h3>{Strings.LANGUAGES_DART}</h3>
             <h4>{Strings.LANGUAGES_JAVASCRIPT}</h4>
+            <h5>Tools</h5>
+            <p>Activity, Fragment, ViewModel, JetPack Compose, MVVM, MVI, Clean Architecture, Reactive UI, Material Design, Coroutines, Flow, LiveData, RxJava, RESTful API, Apollo GraphQL, Git, RecyclerView, SQLite database, Room, Hilt, Dagger, Dependency injection, Auth0, OAuth, Google Play Billing, Figma, Design Tokens, CI/CD, Test Pyramid, Unit Test, Integration Test, UI Test, Mockk, Chrome Custom Tab, WebKit, Release Management, Trunk-based development, Technical Writing, Agile Scrum, Kanban, Waterfall, Dev Ops.</p>
           </Col>
         </Row>
       </Container>
