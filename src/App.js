@@ -12,7 +12,7 @@ import RightAlignedImageContentRow from './ui/RightAlignedImageContentRow';
 import Footer from './ui/Footer';
 import Divider from './ui/Divider';
 import RightAlignedTableContentRow from './ui/TableContentRow';
-import RoleContent from './ui/RoleContent';
+import RoleItem from './ui/RoleItem';
 import imgMvi from './assets/panel-mvi.png';
 import imgLogin from './assets/panel-login.png';
 import imgPerformance from './assets/panel-performance.png';
@@ -59,22 +59,22 @@ function App() {
             <h1>{Strings.ROLES_TITLE}</h1>
             <h2 className="text-muted">{Strings.ROLES_SUBTITLE}</h2>
             <br></br>
-            <RoleContent
+            <RoleItem
                 title={Strings.ROLES_STAFF}
                 date={Strings.ROLES_STAFF_DATE}
                 summaryOne={Strings.ROLES_STAFF_TEAM}
                 summaryTwo={Strings.ROLES_STAFF_APP_PLATFORM}
                 summaryThree={Strings.ROLES_STAFF_WEBSHOP} />
-            <RoleContent
+            <RoleItem
                 title={Strings.ROLES_LEAD}
                 date={Strings.ROLES_LEAD_DATE}
                 summaryOne={Strings.ROLES_LEAD_MULTIPLATFORM} />
-            <RoleContent
+            <RoleItem
                 title={Strings.ROLES_SENIOR}
                 date={Strings.ROLES_SENIOR_DATE}
                 summaryOne={Strings.ROLES_SENIOR_EXPERIMENTAL}
                 summaryTwo={Strings.ROLES_SENIOR_LOGIN_SUB} />
-            <RoleContent
+            <RoleItem
                 title={Strings.ROLES_SOFTWARE}
                 date={Strings.ROLES_SOFTWARE_DATE}
                 summaryOne={Strings.ROLES_SOFTWARE_REDESIGN} />

@@ -1,4 +1,4 @@
-const RoleContent = (props) => (
+const RoleItem = (props) => (
     <div>
         <h3>{props.title}</h3>
         <h4 className="text-muted">{props.date}</h4>
@@ -9,4 +9,4 @@ const RoleContent = (props) => (
     </div>
 );
 
-export default RoleContent;
+export default RoleItem;
