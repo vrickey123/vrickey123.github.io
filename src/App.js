@@ -154,12 +154,18 @@ function App() {
         <h2 class="display-2" id="languages">{Strings.LANGUAGES_TITLE}</h2>
         <Row className="mt-5 mb-5">
           <Col className="justify-content-around">
+            <h1 class="text-muted">{Strings.LANGUAGES_COMPUTER}</h1>
             <h1>{Strings.LANGUAGES_KOTLIN}</h1>
             <h2>{Strings.LANGUAGES_JAVA}</h2>
             <h3>{Strings.LANGUAGES_DART}</h3>
             <h4>{Strings.LANGUAGES_JAVASCRIPT}</h4>
             <h5>{Strings.TOOLS_TITLE}</h5>
             <p>{Strings.TOOLS}</p>
+            <br></br>
+            <h1 class="text-muted">{Strings.LANGUAGES_HUMAN}</h1>
+            <h1>{Strings.LANGUAGES_ENGLISH}</h1>
+            <h2>{Strings.LANGUAGES_FRENCH}</h2>
+            <h3>{Strings.LANGUAGES_JAPANESE}</h3>
           </Col>
         </Row>
       </Container>
