@@ -22,6 +22,7 @@ import imgPyramid from './assets/img-test-pyramid.png';
 import imgThreeEnv from './assets/img-three-env.png';
 import imgMultiApp from './assets/img-multimodule-app.png';
 import imgTrunkScale from './assets/img-trunk-scale.png';
+import HeadlineSummaryBulletImgInset from './ui/HeadlineSummaryBulletImgInset';
 
 function App() {
   return (
@@ -207,50 +208,50 @@ function App() {
                 <h1>{Strings.PLAYBOOK_MULTIMODULE}</h1>
                 <h2 class="text-muted">{Strings.PLAYBOOK_MULTIMODULE_SUBTITLE}</h2>
                 <br></br>
-                <p>{Strings.PLAYBOOK_MULTIMODULE_SUMMARY}</p>
-                <ul>
-                    <li>{Strings.PLAYBOOK_MULTIMODULE_SEPARATE}</li>
-                    <li>{Strings.PLAYBOOK_MULTIMODULE_REUSE}</li>
-                    <li>{Strings.PLAYBOOK_MULTIMODULE_BUILD_TIMES}</li>
-                    <li>{Strings.PLAYBOOK_MULTIMODULE_DISTRIBUTION}</li>
-                </ul>
-                <Image fluid src={imgMultiApp} />
-                <h1>{Strings.PLAYBOOK_CONTINUOUS_DELIVERY}</h1>
-                <h2 class="text-muted">{Strings.PLAYBOOK_THREE_ENV_SUBTITLE}</h2>
+                <HeadlineSummaryBulletImgInset
+                    summary={Strings.PLAYBOOK_MULTIMODULE_SUMMARY}
+                    items={[
+                        Strings.PLAYBOOK_MULTIMODULE_SEPARATE,
+                        Strings.PLAYBOOK_MULTIMODULE_REUSE,
+                        Strings.PLAYBOOK_MULTIMODULE_BUILD_TIMES,
+                        Strings.PLAYBOOK_MULTIMODULE_DISTRIBUTION
+                    ]}
+                    img={imgMultiApp} />
+                <h1>{Strings.PLAYBOOK_CI}</h1>
+                <h2 class="text-muted">{Strings.PLAYBOOK_CI_SUBTITLE}</h2>
                 <br></br>
-                <h3>{Strings.PLAYBOOK_THREE_ENV_TEST}</h3>
-                <p>{Strings.PLAYBOOK_THREE_ENV_LEAD}</p>
-                <ul>
-                    <li>{Strings.PLAYBOOK_THREE_ENV_DEV_INT}</li>
-                    <li>{Strings.PLAYBOOK_THREE_ENV_PROD}</li>
-                    <li>{Strings.PLAYBOOK_THREE_ENV_ROLE}</li>
-                </ul>
-                <Image fluid src={imgThreeEnv} />
-                <br></br>
-                <br></br>
-                <h3>{Strings.PLAYBOOK_APP_BRANCHING_STRATEGY}</h3>
-                <p>{Strings.PLAYBOOK_APP_BRANCHING_STRATEGY_LEAD}</p>
-                <ul>
-                    <li>{Strings.PLAYBOOK_APP_BRANCHING_STRATEGY_BEFORE}</li>
-                    <li>{Strings.PLAYBOOK_APP_BRANCHING_STRATEGY_ENSURES}</li>
-                    <li>{Strings.PLAYBOOK_APP_BRANCHING_STRATEGY_HOTFIX}</li>
-                </ul>
-                <Image fluid src={imgTrunkScale} />
-                <h6>Source: <a href="https://trunkbaseddevelopment.com">Trunk Based Development</a></h6>
-                <br></br>
-                <br></br>
+                <HeadlineSummaryBulletImgInset
+                    headline={Strings.PLAYBOOK_THREE_ENV_TEST}
+                    summary={Strings.PLAYBOOK_THREE_ENV_SUMMARY}
+                    items={[
+                        Strings.PLAYBOOK_THREE_ENV_DEV_INT,
+                        Strings.PLAYBOOK_THREE_ENV_PROD,
+                        Strings.PLAYBOOK_THREE_ENV_ROLE
+                    ]}
+                    img={imgThreeEnv} />
+                <HeadlineSummaryBulletImgInset
+                    headline={Strings.PLAYBOOK_APP_BRANCHING_STRATEGY}
+                    summary={Strings.PLAYBOOK_APP_BRANCHING_STRATEGY_SUMMARY}
+                    items={[
+                        Strings.PLAYBOOK_APP_BRANCHING_STRATEGY_BEFORE,
+                        Strings.PLAYBOOK_APP_BRANCHING_STRATEGY_ENSURES,
+                        Strings.PLAYBOOK_APP_BRANCHING_STRATEGY_HOTFIX
+                    ]}
+                    img={imgTrunkScale}
+                    source={Strings.PLAYBOOK_APP_TRUNK_SOURCE}
+                    sourceLink={Strings.URL_TRUNK} />
                 <h1>{Strings.PLAYBOOK_TEST_PYRAMID}</h1>
                 <h2 class="text-muted">{Strings.PLAYBOOK_TEST_PYRAMID_SUBTITLE}</h2>
-                <p>{Strings.PLAYBOOK_TEST_PYRAMID_SUMMARY}</p>
-                <ul>
-                    <li>UI | Android runtime | <a href="https://developer.android.com/training/testing/ui-tests">UI Tests (Android Docs)</a> | Verify a user flow by asserting UI hierarchy or screenshot analysis</li>
-                    <li>Integration | Android runtime | <a href="https://developer.android.com/training/testing/instrumented-tests">Instrumented Tests (Android Docs)</a> | Verify integration of real API by asserting Response matches an expected Result</li>
-                    <li>Unit | Java runtime | <a href="https://developer.android.com/training/testing/local-tests">Unit Tests (Android Docs)</a> | Verify implementation of a function returns expected Result using mock or fakes</li>
-                </ul>
-                <br></br>
-                <Image fluid src={imgPyramid} />
-                <h6>Source: <a href="https://anymindgroup.com/news/tech-blog/15053/">AnyMind Tech Blog</a></h6>
-                <br></br>
+                <HeadlineSummaryBulletImgInset
+                    summary={Strings.PLAYBOOK_TEST_PYRAMID_SUMMARY}
+                    items={[
+                        Strings.PLAYBOOK_TEST_PYRAMID_UI,
+                        Strings.PLAYBOOK_TEST_PYRAMID_INTEGRATION,
+                        Strings.PLAYBOOK_TEST_PYRAMID_UI
+                    ]}
+                    img={imgPyramid}
+                    source={Strings.PLAYBOOK_TEST_PYRAMID_SOURCE}
+                    sourceLink={Strings.URL_ANYMIND} />
             </Col>
         </Row>
         <h2 class="display-2" id="languages">{Strings.LANGUAGES_TITLE}</h2>
