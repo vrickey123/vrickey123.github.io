@@ -220,7 +220,11 @@ function App() {
                 <br></br>
                 <h3>{Strings.PLAYBOOK_THREE_ENV_TEST}</h3>
                 <p>{Strings.PLAYBOOK_THREE_ENV_LEAD}</p>
-                <p>{Strings.PLAYBOOK_THREE_ENV_SUMMARY}</p>
+                <ul>
+                    <li>{Strings.PLAYBOOK_THREE_ENV_DEV_INT}</li>
+                    <li>{Strings.PLAYBOOK_THREE_ENV_PROD}</li>
+                    <li>{Strings.PLAYBOOK_THREE_ENV_ROLE}</li>
+                </ul>
                 <Image fluid src={imgThreeEnv} />
                 <br></br>
                 <br></br>
