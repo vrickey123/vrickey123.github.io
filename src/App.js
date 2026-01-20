@@ -213,6 +213,8 @@ function App() {
                     items={[
                         Strings.PLAYBOOK_MULTIMODULE_SEPARATE,
                         Strings.PLAYBOOK_MULTIMODULE_REUSE,
+                        Strings.PLAYBOOK_MULTIMODULE_TEST,
+                        Strings.PLAYBOOK_MULTIMODULE_SWAP,
                         Strings.PLAYBOOK_MULTIMODULE_BUILD_TIMES,
                         Strings.PLAYBOOK_MULTIMODULE_DISTRIBUTION
                     ]}
