@@ -156,7 +156,7 @@ module.exports = {
     PLAYBOOK_TEST_PYRAMID_SUMMARY : "The test pyramid illustrates how engineers should allocate their test coverage given a time and cost tradeoff. Depending on test environment, branching strategy, and team scale; some or all can run on PRs.",
     PLAYBOOK_TEST_PYRAMID_UI : "UI | Android runtime | Verify a user flow by asserting UI hierarchy or screenshot analysis",
     PLAYBOOK_TEST_PYRAMID_INTEGRATION : "Integration (Instrumented) | Android runtime | Verify integration of real API by asserting Response matches an expected Result",
-    PLAYBOOK_TEST_PYRAMID_UI : "Unit | Java runtime | Verify implementation of a function returns expected Result using mock or fakes",
+    PLAYBOOK_TEST_PYRAMID_UNIT : "Unit | Java runtime | Verify implementation of a function returns expected Result using mock or fakes",
     PLAYBOOK_TEST_PYRAMID_SOURCE : "AnyMind Tech Blog",
     LANGUAGES_TITLE : "Languages",
     LANGUAGES_COMPUTER : "Computer",

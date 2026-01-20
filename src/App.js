@@ -13,6 +13,7 @@ import Footer from './ui/Footer';
 import Divider from './ui/Divider';
 import RightAlignedTableContentRow from './ui/TableContentRow';
 import RoleItem from './ui/RoleItem';
+import HeadlineSummaryBulletImgInset from './ui/HeadlineSummaryBulletImgInset';
 import imgMvi from './assets/panel-mvi.png';
 import imgLogin from './assets/panel-login.png';
 import imgPerformance from './assets/panel-performance.png';
@@ -22,7 +23,6 @@ import imgPyramid from './assets/img-test-pyramid.png';
 import imgThreeEnv from './assets/img-three-env.png';
 import imgMultiApp from './assets/img-multimodule-app.png';
 import imgTrunkScale from './assets/img-trunk-scale.png';
-import HeadlineSummaryBulletImgInset from './ui/HeadlineSummaryBulletImgInset';
 
 function App() {
   return (
@@ -247,7 +247,7 @@ function App() {
                     items={[
                         Strings.PLAYBOOK_TEST_PYRAMID_UI,
                         Strings.PLAYBOOK_TEST_PYRAMID_INTEGRATION,
-                        Strings.PLAYBOOK_TEST_PYRAMID_UI
+                        Strings.PLAYBOOK_TEST_PYRAMID_UNIT
                     ]}
                     img={imgPyramid}
                     source={Strings.PLAYBOOK_TEST_PYRAMID_SOURCE}
