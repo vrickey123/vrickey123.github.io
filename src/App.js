@@ -1,7 +1,7 @@
 import './App.css';
 import Strings from './res/strings';
 import Dimens from './res/dimens';
-import { Alert, Container, Row, Col, CardDeck } from 'react-bootstrap';
+import { Alert, Container, Image, Row, Col, CardDeck } from 'react-bootstrap';
 import StretchedLinkedData from './data/StretchedLinkData';
 import TableContent from './data/TableContent';
 import TopNavBar from './ui/TopNavBar';
@@ -20,6 +20,8 @@ import imgRedesign from './assets/panel-redesign.png';
 import imgCompose from './assets/panel-compose.png'
 import imgPyramid from './assets/img-test-pyramid.png';
 import imgThreeEnv from './assets/img-three-env.png';
+import imgMultiApp from './assets/img-multimodule-app.png';
+import imgTrunkScale from './assets/img-trunk-scale.png';
 
 function App() {
   return (
@@ -162,7 +164,7 @@ function App() {
                 <h2 class="text-muted">{Strings.PLAYBOOK_DISCOVERY_SUBTITLE}</h2>
                 <br></br>
                 <h3>{Strings.PLAYBOOK_DISCOVERY_GOAL}</h3>
-                <p class="lead">{Strings.PLAYBOOK_DISCOVERY_GOAL_LEAD}</p>
+                <p>{Strings.PLAYBOOK_DISCOVERY_GOAL_LEAD}</p>
                 <p>{Strings.PLAYBOOK_DISCOVERY_SUMMARY}</p>
                 <h3>{Strings.PLAYBOOK_DISCOVERY_PROCESS}</h3>
                 <ol>
@@ -201,11 +203,43 @@ function App() {
                     <li>{Strings.PLAYBOOK_DISCOVERY_TICKET}</li>
                 </ul>
                 <Alert variant="info">{Strings.PLAYBOOK_DISCOVERY_MANAGER_WHY}</Alert>
-                <h1 >{Strings.PLAYBOOK_THREE_ENV}</h1>
+                <br></br>
+                <h1>{Strings.PLAYBOOK_MULTIMODULE}</h1>
+                <h2 class="text-muted">{Strings.PLAYBOOK_MULTIMODULE_SUBTITLE}</h2>
+                <br></br>
+                <p>{Strings.PLAYBOOK_MULTIMODULE_SUMMARY}</p>
+                <ul>
+                    <li>{Strings.PLAYBOOK_MULTIMODULE_SEPARATE}</li>
+                    <li>{Strings.PLAYBOOK_MULTIMODULE_REUSE}</li>
+                    <li>{Strings.PLAYBOOK_MULTIMODULE_BUILD_TIMES}</li>
+                    <li>{Strings.PLAYBOOK_MULTIMODULE_DISTRIBUTION}</li>
+                </ul>
+                <Image fluid src={imgMultiApp} />
+                <h1>{Strings.PLAYBOOK_CONTINUOUS_DELIVERY}</h1>
                 <h2 class="text-muted">{Strings.PLAYBOOK_THREE_ENV_SUBTITLE}</h2>
+                <br></br>
+                <h3>{Strings.PLAYBOOK_THREE_ENV_TEST}</h3>
+                <p>{Strings.PLAYBOOK_THREE_ENV_LEAD}</p>
+                <p>{Strings.PLAYBOOK_THREE_ENV_SUMMARY}</p>
+                <Image fluid src={imgThreeEnv} />
+                <br></br>
+                <br></br>
+                <h3>{Strings.PLAYBOOK_APP_BRANCHING_STRATEGY}</h3>
+                <p>{Strings.PLAYBOOK_APP_BRANCHING_STRATEGY_LEAD}</p>
+                <ul>
+                    <li>{Strings.PLAYBOOK_APP_BRANCHING_STRATEGY_BEFORE}</li>
+                    <li>{Strings.PLAYBOOK_APP_BRANCHING_STRATEGY_ENSURES}</li>
+                    <li>{Strings.PLAYBOOK_APP_BRANCHING_STRATEGY_HOTFIX}</li>
+                </ul>
+                <Image fluid src={imgTrunkScale} />
+                <h6>Source: <a href="https://trunkbaseddevelopment.com">Trunk Based Development</a></h6>
+                <br></br>
                 <br></br>
                 <h1 >{Strings.PLAYBOOK_TEST_PYRAMID}</h1>
                 <h2 class="text-muted">{Strings.PLAYBOOK_TEST_PYRAMID_SUBTITLE}</h2>
+                <br></br>
+                <Image fluid src={imgPyramid} />
+                <h6>Source: <a href="https://anymindgroup.com/news/tech-blog/15053/">AnyMind Tech Blog</a></h6>
                 <br></br>
             </Col>
         </Row>
