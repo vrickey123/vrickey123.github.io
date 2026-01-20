@@ -235,8 +235,14 @@ function App() {
                 <h6>Source: <a href="https://trunkbaseddevelopment.com">Trunk Based Development</a></h6>
                 <br></br>
                 <br></br>
-                <h1 >{Strings.PLAYBOOK_TEST_PYRAMID}</h1>
+                <h1>{Strings.PLAYBOOK_TEST_PYRAMID}</h1>
                 <h2 class="text-muted">{Strings.PLAYBOOK_TEST_PYRAMID_SUBTITLE}</h2>
+                <p>{Strings.PLAYBOOK_TEST_PYRAMID_SUMMARY}</p>
+                <ul>
+                    <li>UI | Android runtime | <a href="https://developer.android.com/training/testing/ui-tests">UI Tests (Android Docs)</a> | Verify a user flow by asserting UI hierarchy or screenshot analysis</li>
+                    <li>Integration | Android runtime | <a href="https://developer.android.com/training/testing/instrumented-tests">Instrumented Tests (Android Docs)</a> | Verify integration of real API by asserting Response matches an expected Result</li>
+                    <li>Unit | Java runtime | <a href="https://developer.android.com/training/testing/local-tests">Unit Tests (Android Docs)</a> | Verify implementation of a function returns expected Result using mock or fakes</li>
+                </ul>
                 <br></br>
                 <Image fluid src={imgPyramid} />
                 <h6>Source: <a href="https://anymindgroup.com/news/tech-blog/15053/">AnyMind Tech Blog</a></h6>
