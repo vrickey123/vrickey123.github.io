@@ -94,7 +94,7 @@ module.exports = {
     RESUME_TITLE : "React-Bootstrap Resume Website",
     RESUME_SUMMARY : "This website was built using react-bootstrap. (2020 Portfolio Project)",
     MET_TITLE : "The Met Impressionist Showcase",
-    MET_SUMMARY : "Multi-module Jetpack Compose app showcasing The Met's impressionist collection. My best architecture sample. (2022 Portfolio Project)",
+    MET_SUMMARY : "Multi-module Jetpack Compose app showcasing The Met's impressionist collection. My most recent architecture sample. (2022 Portfolio Project)",
     PLAYBOOK_TITLE : "Playbook",
     PLAYBOOK_SUBTITLE : "From idea to release",
     PLAYBOOK_DISCOVERY : "Discovery",
