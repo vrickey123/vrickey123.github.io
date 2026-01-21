@@ -17,7 +17,7 @@ import HeadlineSummaryBulletImgInset from './ui/HeadlineSummaryBulletImgInset';
 import TripleImgCaptionInset from './ui/TripleImgCaptionInset';
 import FourImgCaptionInset from './ui/FourImgCaptionInset';
 import imgMvi from './assets/panel-mvi.png';
-import imgLogin from './assets/panel-login.png';
+import imgWebshop from './assets/panel-wsj-2026-01-webshop-v1.png';
 import imgPerformance from './assets/panel-performance.png';
 import imgRedesign from './assets/panel-redesign.png';
 import imgCompose from './assets/panel-compose.png'
@@ -30,6 +30,7 @@ import imgFigma from './assets/img-figma.svg.png';
 import imgGantt from './assets/img-gantt-square.png';
 import imgCollab from './assets/img-discovery-collaboration.png';
 import imgAnalytics from './assets/img-google-analytics.svg.png';
+import imgPlatform from './assets/panel-wsj-2026-01.png';
 
 function App() {
   return (
@@ -100,10 +101,10 @@ function App() {
             <Divider
               height={Dimens.DIVIDER_HEIGHT} />
             <RightAlignedImageContentRow
-              title={Strings.PURCHASING_TITLE}
-              subtitle={Strings.PURCHASING_SUBTITLE}
-              summary={Strings.PURCHASING_SUMMARY}
-              img={imgLogin} />
+              title={Strings.WEBSHOP_TITLE}
+              subtitle={Strings.WEBSHOP_SUBTITLE}
+              summary={Strings.WEBSHOP_SUMMARY}
+              img={imgWebshop} />
             <Divider
               height={Dimens.DIVIDER_HEIGHT} />
             <LeftAlignedImageContentRow
@@ -125,6 +126,15 @@ function App() {
               subtitle={Strings.GRAPH_SUBTITLE}
               summary={Strings.GRAPH_SUMMARY}
               img={imgPerformance} />
+            <Divider
+              height={Dimens.DIVIDER_HEIGHT} />
+            <RightAlignedImageContentRow
+              title={Strings.PLATFORM_TITLE}
+              subtitle={Strings.PLATFORM_SUBTITLE}
+              summary={Strings.PLATFORM_SUMMARY}
+              img={imgPlatform} />
+            <Divider
+              height={Dimens.DIVIDER_HEIGHT} />
           </Col>
         </Row>
         <h2 class="display-2" id="opensource">{Strings.OPEN_SOURCE}</h2>
