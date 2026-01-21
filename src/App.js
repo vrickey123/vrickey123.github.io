@@ -14,6 +14,7 @@ import Divider from './ui/Divider';
 import RightAlignedTableContentRow from './ui/TableContentRow';
 import RoleItem from './ui/RoleItem';
 import HeadlineSummaryBulletImgInset from './ui/HeadlineSummaryBulletImgInset';
+import TripleImgCaptionInset from './ui/TripleImgCaptionInset';
 import imgMvi from './assets/panel-mvi.png';
 import imgLogin from './assets/panel-login.png';
 import imgPerformance from './assets/panel-performance.png';
@@ -23,6 +24,9 @@ import imgPyramid from './assets/img-test-pyramid.png';
 import imgThreeEnv from './assets/img-three-env.png';
 import imgMultiApp from './assets/img-multimodule-app.png';
 import imgTrunkScale from './assets/img-trunk-scale.png';
+import imgApi from './assets/img-api.png';
+import imgFigma from './assets/img-figma.svg.png';
+import imgGantt from './assets/img-gantt-square.png';
 
 function App() {
   return (
@@ -158,11 +162,19 @@ function App() {
         </CardDeck>
         <h2 class="display-2" id="playbook">{Strings.PLAYBOOK_TITLE}</h2>
         <h4 class="display-4 text-muted" >{Strings.PLAYBOOK_SUBTITLE}</h4>
-        <p class="lead">{Strings.PLAYBOOK_DISCOVERY_ART}</p>
+        <p class="lead">{Strings.PLAYBOOK_LEAD}</p>
         <Row className="mt-5 mb-5">
             <Col className="justify-content-around">
                 <h1 >{Strings.PLAYBOOK_DISCOVERY}</h1>
                 <h2 class="text-muted">{Strings.PLAYBOOK_DISCOVERY_SUBTITLE}</h2>
+                <br></br>
+                <TripleImgCaptionInset
+                    imgOneSrc={imgFigma}
+                    captionOne={Strings.PLAYBOOK_CAPTION_UI}
+                    imgTwoSrc={imgApi}
+                    captionTwo={Strings.PLAYBOOK_CAPTION_API}
+                    imgThreeSrc={imgGantt}
+                    captionThree={Strings.PLAYBOOK_CAPTION_GANTT}  />
                 <br></br>
                 <h3>{Strings.PLAYBOOK_DISCOVERY_GOAL}</h3>
                 <p>{Strings.PLAYBOOK_DISCOVERY_GOAL_LEAD}</p>
@@ -200,7 +212,7 @@ function App() {
                  <Alert variant="info">{Strings.PLAYBOOK_DISCOVERY_ENGINEERING_WHY}</Alert>
                 <h4 class="text-muted">{Strings.PLAYBOOK_DISCOVERY_MANAGER}</h4>
                 <ul>
-                    <li>{Strings.PLAYBOOK_DISCOVERY_GANNT}</li>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_GANTT}</li>
                     <li>{Strings.PLAYBOOK_DISCOVERY_TICKET}</li>
                 </ul>
                 <Alert variant="info">{Strings.PLAYBOOK_DISCOVERY_MANAGER_WHY}</Alert>
