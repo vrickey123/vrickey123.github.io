@@ -15,6 +15,7 @@ import RightAlignedTableContentRow from './ui/TableContentRow';
 import RoleItem from './ui/RoleItem';
 import HeadlineSummaryBulletImgInset from './ui/HeadlineSummaryBulletImgInset';
 import TripleImgCaptionInset from './ui/TripleImgCaptionInset';
+import FourImgCaptionInset from './ui/FourImgCaptionInset';
 import imgMvi from './assets/panel-mvi.png';
 import imgLogin from './assets/panel-login.png';
 import imgPerformance from './assets/panel-performance.png';
@@ -27,6 +28,8 @@ import imgTrunkScale from './assets/img-trunk-scale.png';
 import imgApi from './assets/img-api.png';
 import imgFigma from './assets/img-figma.svg.png';
 import imgGantt from './assets/img-gantt-square.png';
+import imgCollab from './assets/img-discovery-collaboration.png';
+import imgAnalytics from './assets/img-google-analytics.svg.png';
 
 function App() {
   return (
@@ -168,13 +171,15 @@ function App() {
                 <h1 >{Strings.PLAYBOOK_DISCOVERY}</h1>
                 <h2 class="text-muted">{Strings.PLAYBOOK_DISCOVERY_SUBTITLE}</h2>
                 <br></br>
-                <TripleImgCaptionInset
+                <FourImgCaptionInset
                     imgOneSrc={imgFigma}
                     captionOne={Strings.PLAYBOOK_CAPTION_UI}
                     imgTwoSrc={imgApi}
                     captionTwo={Strings.PLAYBOOK_CAPTION_API}
-                    imgThreeSrc={imgGantt}
-                    captionThree={Strings.PLAYBOOK_CAPTION_GANTT}  />
+                    imgThreeSrc={imgAnalytics}
+                    captionThree={Strings.PLAYBOOK_CAPTION_ANALYTICS}
+                    imgFourSrc={imgGantt}
+                    captionFour={Strings.PLAYBOOK_CAPTION_GANTT} />
                 <br></br>
                 <h3>{Strings.PLAYBOOK_DISCOVERY_GOAL}</h3>
                 <p>{Strings.PLAYBOOK_DISCOVERY_GOAL_LEAD}</p>
@@ -186,8 +191,10 @@ function App() {
                     <li>{Strings.PLAYBOOK_DISCOVERY_REGROUP}</li>
                     <li>{Strings.PLAYBOOK_DISCOVERY_REPEAT}</li>
                     <li>{Strings.PLAYBOOK_DISCOVERY_INTAKE}</li>
+                    <li>{Strings.PLAYBOOK_DISCOVERY_CREATE}</li>
                     <li>{Strings.PLAYBOOK_DISCOVERY_ITERATE}</li>
                 </ol>
+                <Image src={imgCollab} fluid />
                 <h3>{Strings.PLAYBOOK_DISCOVERY_OUTCOME}</h3>
                 <h4 class="text-muted">{Strings.PLAYBOOK_DISCOVERY_PRODUCT}</h4>
                 <ul>
