@@ -31,6 +31,7 @@ import imgGantt from './assets/img-gantt-square.png';
 import imgCollab from './assets/img-discovery-collaboration.png';
 import imgAnalytics from './assets/img-google-analytics.svg.png';
 import imgPlatform from './assets/panel-wsj-2026-01.png';
+import imgMountains from './assets/img-mountains.jpg';
 
 function App() {
   return (
@@ -301,6 +302,16 @@ function App() {
             <h2>{Strings.LANGUAGES_FRENCH}</h2>
             <h3>{Strings.LANGUAGES_JAPANESE}</h3>
           </Col>
+        </Row>
+        <h2 class="display-2" id="languages">{Strings.THANKS}</h2>
+        <Row>
+            <Col className="justify-content-around">
+            <LeftAlignedImageContentRow
+              title={Strings.SEE_YOU}
+              subtitle={Strings.EMOJIS}
+              summary={Strings.WHISTLER}
+              img={imgMountains} />
+            </Col>
         </Row>
       </Container>
       <Footer
