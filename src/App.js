@@ -274,9 +274,11 @@ function App() {
                     img={imgTrunkScale}
                     source={Strings.PLAYBOOK_APP_TRUNK_SOURCE}
                     sourceLink={Strings.URL_TRUNK} />
-                <h1>{Strings.PLAYBOOK_TEST_PYRAMID}</h1>
-                <h2 class="text-muted">{Strings.PLAYBOOK_TEST_PYRAMID_SUBTITLE}</h2>
+                <h1>{Strings.PLAYBOOK_AUTOMATED_TESTING}</h1>
+                <h2 class="text-muted">{Strings.PLAYBOOK_AUTOMATED_TESTING_SUBTITLE}</h2>
+                <br></br>
                 <HeadlineSummaryBulletImgInset
+                    headline={Strings.PLAYBOOK_TEST_PYRAMID_HEADLINE}
                     summary={Strings.PLAYBOOK_TEST_PYRAMID_SUMMARY}
                     items={[
                         Strings.PLAYBOOK_TEST_PYRAMID_UI,
@@ -286,8 +288,8 @@ function App() {
                     img={imgPyramid}
                     source={Strings.PLAYBOOK_TEST_PYRAMID_SOURCE}
                     sourceLink={Strings.URL_ANYMIND} />
-                <h2 class="text-muted">{Strings.PLAYBOOK_TEST_PYRAMID_5_SUBTITLE}</h2>    
                 <HeadlineSummaryBulletImgInset
+                    headline={Strings.PLAYBOOK_TEST_PYRAMID_5_HEADLINE}
                     summary={Strings.PLAYBOOK_TEST_PYRAMID_5_SUMMARY}
                     items={[
                         Strings.PLAYBOOK_TEST_PYRAMID_5_RELEASE,
