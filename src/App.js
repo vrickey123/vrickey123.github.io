@@ -22,6 +22,7 @@ import imgPerformance from './assets/panel-performance.png';
 import imgRedesign from './assets/panel-redesign.png';
 import imgCompose from './assets/panel-compose.png'
 import imgPyramid from './assets/img-test-pyramid.png';
+import imgPyramid5 from './assets/img-android-5-layer-test-pyramid-markup';
 import imgThreeEnv from './assets/img-three-env.png';
 import imgMultiApp from './assets/img-multimodule-app.png';
 import imgTrunkScale from './assets/img-trunk-scale.png';
@@ -284,6 +285,17 @@ function App() {
                     img={imgPyramid}
                     source={Strings.PLAYBOOK_TEST_PYRAMID_SOURCE}
                     sourceLink={Strings.URL_ANYMIND} />
+                <h2 class="text-muted">{Strings.PLAYBOOK_TEST_PYRAMID_5_SUBTITLE}</h2>    
+                <HeadlineSummaryBulletImgInset
+                    summary={Strings.PLAYBOOK_TEST_PYRAMID_5_SUMMARY}
+                    items={[
+                        Strings.PLAYBOOK_TEST_PYRAMID_UI,
+                        Strings.PLAYBOOK_TEST_PYRAMID_INTEGRATION,
+                        Strings.PLAYBOOK_TEST_PYRAMID_UNIT
+                    ]}
+                    img={imgPyramid5}
+                    source={Strings.PLAYBOOK_TEST_PYRAMID_SOURCE}
+                    sourceLink={Strings.URL_ANDROID_TESTING_STRATEGY} />    
             </Col>
         </Row>
         <h2 class="display-2" id="languages">{Strings.LANGUAGES_TITLE}</h2>
