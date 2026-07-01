@@ -22,7 +22,7 @@ import imgPerformance from './assets/panel-performance.png';
 import imgRedesign from './assets/panel-redesign.png';
 import imgCompose from './assets/panel-compose.png'
 import imgPyramid from './assets/img-test-pyramid.png';
-import imgPyramid5 from './assets/img-android-5-layer-test-pyramid-markup';
+import imgPyramid5 from './assets/img-android-5-layer-test-pyramid-markup.png';
 import imgThreeEnv from './assets/img-three-env.png';
 import imgMultiApp from './assets/img-multimodule-app.png';
 import imgTrunkScale from './assets/img-trunk-scale.png';
