@@ -289,12 +289,14 @@ function App() {
                 <HeadlineSummaryBulletImgInset
                     summary={Strings.PLAYBOOK_TEST_PYRAMID_5_SUMMARY}
                     items={[
-                        Strings.PLAYBOOK_TEST_PYRAMID_UI,
-                        Strings.PLAYBOOK_TEST_PYRAMID_INTEGRATION,
-                        Strings.PLAYBOOK_TEST_PYRAMID_UNIT
+                        Strings.PLAYBOOK_TEST_PYRAMID_5_RELEASE,
+                        Strings.PLAYBOOK_TEST_PYRAMID_5_APPLICATION,
+                        Strings.PLAYBOOK_TEST_PYRAMID_5_FEATURE,
+                        Strings.PLAYBOOK_TEST_PYRAMID_5_COMPONENT,
+                        Strings.PLAYBOOK_TEST_PYRAMID_5_UNIT
                     ]}
                     img={imgPyramid5}
-                    source={Strings.PLAYBOOK_TEST_PYRAMID_SOURCE}
+                    source={Strings.PLAYBOOK_TEST_PYRAMID_5_SOURCE}
                     sourceLink={Strings.URL_ANDROID_TESTING_STRATEGY} />    
             </Col>
         </Row>
