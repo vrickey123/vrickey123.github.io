@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4e1455bf.css",
-    "main.js": "/static/js/main.dc63ade8.js",
+    "main.js": "/static/js/main.6550a269.js",
     "static/media/img-mountains.jpg": "/static/media/img-mountains.37811adf3e41a316530f.jpg",
     "static/media/panel-redesign.png": "/static/media/panel-redesign.cd772ed5e99a4991a4e9.png",
     "static/media/panel-performance.png": "/static/media/panel-performance.1f2ceeaefa516c2ffe21.png",
@@ -14,15 +14,16 @@
     "static/media/img-api.png": "/static/media/img-api.92a5ada82501cb31bb22.png",
     "static/media/img-multimodule-app.png": "/static/media/img-multimodule-app.34b155fce2f09a7457a6.png",
     "static/media/img-figma.svg.png": "/static/media/img-figma.svg.5ebdfef1c003adfa75eb.png",
+    "static/media/img-android-5-layer-test-pyramid-markup.png": "/static/media/img-android-5-layer-test-pyramid-markup.1607138f56ed43626a69.png",
     "static/media/img-gantt-square.png": "/static/media/img-gantt-square.a6940af899c5072f3b27.png",
     "static/media/img-trunk-scale.png": "/static/media/img-trunk-scale.b6b27d9cb65317ec8ea4.png",
     "static/media/img-test-pyramid.png": "/static/media/img-test-pyramid.5493440ddabc8b186aa3.png",
     "index.html": "/index.html",
     "main.4e1455bf.css.map": "/static/css/main.4e1455bf.css.map",
-    "main.dc63ade8.js.map": "/static/js/main.dc63ade8.js.map"
+    "main.6550a269.js.map": "/static/js/main.6550a269.js.map"
   },
   "entrypoints": [
     "static/css/main.4e1455bf.css",
-    "static/js/main.dc63ade8.js"
+    "static/js/main.6550a269.js"
   ]
 }
