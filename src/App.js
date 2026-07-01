@@ -77,9 +77,10 @@ function App() {
             <RoleItem
                 title={Strings.ROLES_STAFF}
                 date={Strings.ROLES_STAFF_DATE}
-                summaryOne={Strings.ROLES_STAFF_TEAM}
+                summaryOne={Strings.ROLES_STAFF_TECH_LEAD}
                 summaryTwo={Strings.ROLES_STAFF_APP_PLATFORM}
-                summaryThree={Strings.ROLES_STAFF_WEBSHOP} />
+                summaryThree={Strings.ROLES_STAFF_WEBSHOP}
+                summaryFour={Strings.ROLES_STAFF_CICD} />
             <RoleItem
                 title={Strings.ROLES_LEAD}
                 date={Strings.ROLES_LEAD_DATE}

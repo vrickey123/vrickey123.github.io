@@ -5,6 +5,7 @@ const RoleItem = (props) => (
         <p>{props.summaryOne}</p>
         <p>{props.summaryTwo}</p>
         <p>{props.summaryThree}</p>
+        <p>{props.summaryFour}</p>
         <br></br>
     </div>
 );
